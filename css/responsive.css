@@ -1,0 +1,1021 @@
+/* =========================================================
+   NANA WEBSITE
+   RESPONSIVE STYLESHEET
+========================================================= */
+
+
+/* =========================================================
+   01. LARGE SCREENS
+   1440px+
+========================================================= */
+
+@media (min-width: 1440px) {
+
+    .section {
+        padding: 150px 0;
+    }
+
+    .nav-container {
+        min-height: 90px;
+    }
+
+    .hero h1 {
+        font-size: 15rem;
+    }
+
+    .card-image {
+        height: 650px;
+    }
+
+    .character-card {
+        min-height: 550px;
+    }
+
+}
+
+
+/* =========================================================
+   02. LAPTOP
+   1200px - 1439px
+========================================================= */
+
+@media (max-width: 1439px) {
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-bands {
+        gap: 15px;
+        padding-left: 15px;
+    }
+
+    .language-selector {
+        padding-left: 15px;
+    }
+
+    .characters-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   03. SMALL LAPTOP / LARGE TABLET
+   992px - 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    /* NAV */
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 0.6rem;
+    }
+
+    .nav-bands {
+        gap: 12px;
+        padding-left: 12px;
+    }
+
+    .language-selector {
+        margin-left: 5px;
+        padding-left: 12px;
+    }
+
+
+    /* GENERAL */
+
+    .section {
+        padding: 100px 0;
+    }
+
+
+    /* HERO */
+
+    .hero h1 {
+        font-size: clamp(6rem, 15vw, 11rem);
+    }
+
+
+    /* INTRO */
+
+    .card-image {
+        height: 480px;
+    }
+
+
+    /* CHARACTERS */
+
+    .characters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .character-card {
+        min-height: 450px;
+    }
+
+
+    /* CHARACTER PAGE */
+
+    .character-catalog {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* STORY */
+
+    .story-layout {
+        gap: 60px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        gap: 60px;
+    }
+
+}
+
+
+/* =========================================================
+   04. TABLET
+   768px - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    .nav-container {
+        min-height: 75px;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        position: relative;
+
+        z-index: 1100;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+
+        top: 0;
+        right: -100%;
+
+        width: min(380px, 85%);
+
+        height: 100vh;
+
+        padding: 110px 40px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 10px;
+
+        background: rgba(8, 8, 8, 0.98);
+
+        border-left: 1px solid var(--border);
+
+        overflow-y: auto;
+
+        transition: right 0.4s ease;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+
+        padding: 12px 0;
+
+        font-size: 0.75rem;
+    }
+
+    .nav-bands {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+
+        padding: 10px 0 0;
+
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+
+    .language-selector {
+        width: 100%;
+
+        margin: 15px 0 0;
+        padding: 15px 0 0;
+
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: clamp(5rem, 18vw, 9rem);
+
+        letter-spacing: 8px;
+    }
+
+    .hero h2 {
+        letter-spacing: 5px;
+    }
+
+
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .nana-cards {
+        grid-template-columns: 1fr;
+
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .card-image {
+        height: 550px;
+    }
+
+
+    /* =====================================================
+       FEATURED
+    ===================================================== */
+
+    .featured-section {
+        min-height: 650px;
+    }
+
+    .featured-content h2 {
+        font-size: clamp(4rem, 12vw, 8rem);
+    }
+
+
+    /* =====================================================
+       BANDS
+    ===================================================== */
+
+    .bands-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .band-card {
+        min-height: 550px;
+    }
+
+
+    /* =====================================================
+       CHARACTERS
+    ===================================================== */
+
+    .characters-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .character-card {
+        min-height: 500px;
+    }
+
+
+    /* =====================================================
+       MUSIC
+    ===================================================== */
+
+    .music-teaser {
+        min-height: 650px;
+    }
+
+
+    /* =====================================================
+       STORY
+    ===================================================== */
+
+    .story-layout {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .story-visual {
+        min-height: 400px;
+    }
+
+
+    /* =====================================================
+       CHARACTER PAGE
+    ===================================================== */
+
+    .characters-page {
+        padding: 80px 0;
+    }
+
+    .character-filters {
+        margin-bottom: 70px;
+    }
+
+    .character-section {
+        margin-bottom: 90px;
+    }
+
+    .character-catalog {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =====================================================
+       MODAL
+    ===================================================== */
+
+    .modal-content {
+        width: min(700px, 100%);
+
+        grid-template-columns: 1fr;
+    }
+
+    .modal-image {
+        height: 350px;
+
+        min-height: 0;
+    }
+
+    .modal-info {
+        padding: 35px;
+    }
+
+    .modal-info h2 {
+        font-size: 2.8rem;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   05. MOBILE
+   576px - 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* =====================================================
+       GENERAL
+    ===================================================== */
+
+    body {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-container {
+        width: 88%;
+    }
+
+
+    /* =====================================================
+       NAV
+    ===================================================== */
+
+    .nav-container {
+        min-height: 70px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+
+        letter-spacing: 6px;
+    }
+
+    .nav-menu {
+        width: 100%;
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        min-height: 100svh;
+
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .hero-small {
+        margin-bottom: 20px;
+
+        font-size: 0.6rem;
+
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: clamp(4rem, 22vw, 7rem);
+
+        letter-spacing: 5px;
+    }
+
+    .hero h2 {
+        margin-top: 25px;
+
+        font-size: 0.75rem;
+
+        letter-spacing: 4px;
+    }
+
+    .hero-description {
+        margin: 20px auto 30px;
+
+        font-size: 0.8rem;
+    }
+
+    .scroll-indicator {
+        margin-top: 45px;
+    }
+
+
+    /* =====================================================
+       SECTION HEADINGS
+    ===================================================== */
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+
+    .section-heading h2,
+    .section-top h2,
+    .story-text h2 {
+        font-size: clamp(2.4rem, 12vw, 4rem);
+
+        letter-spacing: -1px;
+    }
+
+    .section-label {
+        font-size: 0.65rem;
+
+        letter-spacing: 3px;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    .btn {
+        min-height: 48px;
+
+        padding: 0 22px;
+
+        font-size: 0.65rem;
+    }
+
+
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .card-image {
+        height: 450px;
+    }
+
+    .card-content {
+        padding: 28px;
+    }
+
+    .card-content h3 {
+        font-size: 2rem;
+    }
+
+
+    /* =====================================================
+       APARTMENT
+    ===================================================== */
+
+    .featured-section {
+        min-height: 600px;
+    }
+
+    .featured-content {
+        width: 88%;
+    }
+
+    .featured-content h2 {
+        font-size: clamp(3.5rem, 16vw, 6rem);
+    }
+
+    .featured-content > p:not(.section-label) {
+        font-size: 0.82rem;
+    }
+
+
+    /* =====================================================
+       BANDS
+    ===================================================== */
+
+    .band-card {
+        min-height: 500px;
+    }
+
+    .band-content {
+        left: 25px;
+        right: 25px;
+        bottom: 30px;
+    }
+
+    .band-content h3 {
+        font-size: clamp(2.5rem, 12vw, 4rem);
+    }
+
+
+    /* =====================================================
+       CHARACTERS PREVIEW
+    ===================================================== */
+
+    .section-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        margin-bottom: 40px;
+    }
+
+    .characters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .character-card {
+        min-height: 500px;
+    }
+
+
+    /* =====================================================
+       MUSIC
+    ===================================================== */
+
+    .music-teaser {
+        min-height: 600px;
+    }
+
+    .music-content {
+        width: 88%;
+    }
+
+    .music-content h2 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+
+    /* =====================================================
+       STORY
+    ===================================================== */
+
+    .story-layout {
+        gap: 40px;
+    }
+
+    .story-visual {
+        min-height: 350px;
+    }
+
+
+    /* =====================================================
+       PAGE HERO
+    ===================================================== */
+
+    .page-hero {
+        min-height: 55vh;
+
+        padding-bottom: 70px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(4rem, 17vw, 7rem);
+    }
+
+    .page-hero p:not(.section-label) {
+        font-size: 0.8rem;
+    }
+
+
+    /* =====================================================
+       CHARACTER FILTERS
+    ===================================================== */
+
+    .character-filters {
+        gap: 7px;
+
+        margin-bottom: 60px;
+    }
+
+    .filter-btn {
+        padding: 10px 13px;
+
+        font-size: 0.55rem;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    /* =====================================================
+       CHARACTER SECTIONS
+    ===================================================== */
+
+    .character-section {
+        margin-bottom: 75px;
+    }
+
+    .character-section-heading {
+        gap: 15px;
+
+        margin-bottom: 30px;
+    }
+
+    .character-section-heading h2 {
+        font-size: clamp(2.5rem, 11vw, 4rem);
+    }
+
+    .character-profile {
+        grid-template-columns: 1fr;
+    }
+
+    .character-profile-image {
+        height: 350px;
+    }
+
+    .character-profile-content {
+        padding: 28px;
+    }
+
+    .character-profile-content h3 {
+        font-size: 2rem;
+    }
+
+
+    /* =====================================================
+       MODAL
+    ===================================================== */
+
+    .character-modal {
+        padding: 15px;
+    }
+
+    .modal-content {
+        max-height: 90vh;
+
+        overflow-y: auto;
+    }
+
+    .modal-image {
+        height: 300px;
+    }
+
+    .modal-info {
+        padding: 28px;
+    }
+
+    .modal-info h2 {
+        font-size: 2.4rem;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+        padding: 65px 0 25px;
+    }
+
+    .footer-container {
+        width: 88%;
+    }
+
+    .footer-brand h2 {
+        font-size: 3rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+    }
+
+    .footer-bottom {
+        width: 88%;
+
+        margin-top: 45px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   06. SMALL MOBILE
+   Up to 575px
+========================================================= */
+
+@media (max-width: 575px) {
+
+    /* =====================================================
+       GENERAL
+    ===================================================== */
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-container {
+        width: 90%;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero h1 {
+        font-size: clamp(3.7rem, 21vw, 6rem);
+
+        letter-spacing: 3px;
+    }
+
+    .hero h2 {
+        font-size: 0.65rem;
+
+        letter-spacing: 3px;
+    }
+
+    .hero-description {
+        max-width: 320px;
+
+        font-size: 0.75rem;
+
+        line-height: 1.7;
+    }
+
+    .hero-small {
+        font-size: 0.55rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* =====================================================
+       BUTTON
+    ===================================================== */
+
+    .btn {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .card-image {
+        height: 400px;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+
+    /* =====================================================
+       FEATURED
+    ===================================================== */
+
+    .featured-section {
+        min-height: 560px;
+    }
+
+    .featured-content h2 {
+        font-size: clamp(3rem, 17vw, 5rem);
+    }
+
+
+    /* =====================================================
+       BANDS
+    ===================================================== */
+
+    .band-card {
+        min-height: 450px;
+    }
+
+    .band-content {
+        left: 20px;
+        right: 20px;
+        bottom: 25px;
+    }
+
+    .band-content h3 {
+        font-size: clamp(2.3rem, 13vw, 3.5rem);
+    }
+
+
+    /* =====================================================
+       CHARACTERS
+    ===================================================== */
+
+    .character-card {
+        min-height: 450px;
+    }
+
+
+    /* =====================================================
+       STORY
+    ===================================================== */
+
+    .story-visual {
+        min-height: 300px;
+    }
+
+    .story-point span {
+        left: calc(50% + 25px);
+
+        font-size: 0.55rem;
+    }
+
+
+    /* =====================================================
+       CHARACTER PAGE
+    ===================================================== */
+
+    .characters-page {
+        padding: 70px 0;
+    }
+
+    .character-filters {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .character-profile-image {
+        height: 300px;
+    }
+
+
+    /* =====================================================
+       MODAL
+    ===================================================== */
+
+    .modal-image {
+        height: 250px;
+    }
+
+    .modal-info {
+        padding: 25px;
+    }
+
+    .modal-info h2 {
+        font-size: 2rem;
+    }
+
+    .modal-info p {
+        font-size: 0.8rem;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   07. VERY SMALL DEVICES
+   Up to 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero h2 {
+        font-size: 0.6rem;
+    }
+
+    .card-image {
+        height: 350px;
+    }
+
+    .band-card {
+        min-height: 400px;
+    }
+
+    .character-card {
+        min-height: 400px;
+    }
+
+    .character-profile-image {
+        height: 260px;
+    }
+
+    .filter-btn {
+        padding: 9px 7px;
+
+        font-size: 0.5rem;
+    }
+
+}
+
+
+/* =========================================================
+   08. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
