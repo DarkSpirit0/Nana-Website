@@ -1199,37 +1199,36 @@ ul {
     font-weight: 300;
 }
 
-
 /* =========================================================
    14. CHARACTERS PAGE
 ========================================================= */
 
 .characters-page {
     padding: 100px 0;
-
     background: var(--black);
 }
+
+/* -------------------------
+   FILTERS
+------------------------- */
 
 .character-filters {
     display: flex;
     flex-wrap: wrap;
-
     gap: 10px;
 
-    margin-bottom: 100px;
-
+    margin-bottom: 70px;
     padding-bottom: 25px;
 
     border-bottom: 1px solid var(--border);
 }
 
-.filter-btn {
+.filter-button {
     padding: 12px 20px;
 
     border: 1px solid var(--border);
 
     background: transparent;
-
     color: var(--gray-light);
 
     font-size: 0.65rem;
@@ -1245,51 +1244,37 @@ ul {
         border-color var(--transition);
 }
 
-.filter-btn:hover,
-.filter-btn.active {
+.filter-button:hover,
+.filter-button.active {
     background: var(--red);
     border-color: var(--red);
 
     color: var(--white);
 }
 
-.character-section {
-    margin-bottom: 120px;
-}
 
-.character-section-heading {
-    display: flex;
-    align-items: flex-start;
+/* -------------------------
+   CHARACTERS GRID
+------------------------- */
 
-    gap: 25px;
-
-    margin-bottom: 45px;
-}
-
-.character-section-heading h2 {
-    font-family: var(--font-title);
-
-    font-size: clamp(2.5rem, 5vw, 5rem);
-
-    font-weight: 500;
-
-    line-height: 1;
-}
-
-.character-catalog {
+.characters-page .characters-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
 }
+
+
+/* -------------------------
+   CHARACTER CARD
+------------------------- */
 
 .character-profile {
-    display: grid;
+    position: relative;
 
-    grid-template-columns: 45% 55%;
-
-    min-height: 300px;
+    display: flex;
+    flex-direction: column;
 
     background: var(--black-light);
 
@@ -1299,61 +1284,119 @@ ul {
 
     transition:
         transform var(--transition),
-        border-color var(--transition);
+        border-color var(--transition),
+        box-shadow var(--transition);
 }
 
 .character-profile:hover {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
 
     border-color: rgba(181, 43, 67, 0.5);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
-.character-profile-image {
+
+/* -------------------------
+   CHARACTER IMAGE
+------------------------- */
+
+.character-profile .character-image {
     position: relative;
 
+    width: 100%;
+
+    height: 360px;
+
     overflow: hidden;
+
+    background: var(--black);
 }
 
-.character-profile-image img {
+.character-profile .character-image img {
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 
-    filter: grayscale(30%);
+    /*
+       Cambia este valor si alguna imagen
+       necesita mostrar más la parte superior.
+    */
+    object-position: center top;
+
+    filter: grayscale(25%);
 
     transition:
         transform 0.7s ease,
         filter 0.7s ease;
 }
 
-.character-profile:hover .character-profile-image img {
-    transform: scale(1.07);
+.character-profile:hover .character-image img {
+    transform: scale(1.05);
 
     filter: grayscale(0%);
 }
 
-.character-profile-number {
+
+/* -------------------------
+   IMAGE OVERLAY
+------------------------- */
+
+.character-overlay {
     position: absolute;
 
-    top: 15px;
-    left: 15px;
+    inset: 0;
 
-    font-size: 0.65rem;
-
-    letter-spacing: 2px;
-}
-
-.character-profile-content {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
 
-    padding: 35px;
+    background: rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+
+    transition:
+        opacity var(--transition);
 }
 
-.character-profile-content > span {
-    margin-bottom: 8px;
+.character-profile:hover .character-overlay {
+    opacity: 1;
+}
+
+.character-overlay span {
+    padding: 12px 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    background: rgba(0, 0, 0, 0.5);
+
+    color: var(--white);
+
+    font-size: 0.65rem;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+/* -------------------------
+   CHARACTER INFO
+------------------------- */
+
+.character-profile .character-info {
+    position: static;
+
+    padding: 25px 25px 28px;
+
+    background: var(--black-light);
+}
+
+.character-profile .character-info > span {
+    display: block;
+
+    margin-bottom: 7px;
 
     color: var(--red-light);
 
@@ -1361,50 +1404,62 @@ ul {
     font-weight: 600;
 
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.character-profile-content h3 {
-    margin-bottom: 15px;
-
-    font-family: var(--font-title);
-
-    font-size: 2rem;
-
-    font-weight: 500;
-}
-
-.character-profile-content p {
-    color: var(--gray-light);
-
-    font-size: 0.8rem;
-    font-weight: 300;
-}
-
-.character-more {
-    width: fit-content;
-
-    margin-top: 20px;
-
-    padding: 0;
-
-    border: 0;
-
-    background: transparent;
+.character-profile .character-info h2 {
+    margin-bottom: 6px;
 
     color: var(--white);
 
-    font-size: 0.65rem;
-    font-weight: 600;
+    font-family: var(--font-title);
 
-    letter-spacing: 2px;
+    font-size: 1.8rem;
 
-    cursor: pointer;
+    font-weight: 500;
 
-    transition: color var(--transition);
+    line-height: 1.1;
 }
 
-.character-more:hover {
-    color: var(--red-light);
+.character-profile .character-info p {
+    color: var(--gray-light);
+
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+
+/* -------------------------
+   CHARACTER HOVER LINE
+------------------------- */
+
+.character-profile::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--red-light);
+
+    transition: width 0.4s ease;
+}
+
+.character-profile:hover::after {
+    width: 100%;
+}
+
+
+/* -------------------------
+   HIDDEN CHARACTERS
+------------------------- */
+
+.character-profile.hidden {
+    display: none;
 }
 
 
@@ -1426,39 +1481,51 @@ ul {
 
     padding: 30px;
 
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.88);
 
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+
+    overflow-y: auto;
 }
 
 .character-modal.active {
     display: flex;
 }
 
-.modal-overlay {
-    position: absolute;
-    inset: 0;
-}
+
+/* -------------------------
+   MODAL CONTENT
+------------------------- */
 
 .modal-content {
     position: relative;
 
     z-index: 2;
 
-    width: min(900px, 100%);
+    width: min(1000px, 100%);
+
+    max-height: 90vh;
 
     display: grid;
 
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 38% 62%;
+
+    overflow: hidden;
 
     background: var(--black-light);
 
     border: 1px solid var(--border);
 
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.8);
 
     animation: modalAppear 0.35s ease;
 }
+
+
+/* -------------------------
+   CLOSE BUTTON
+------------------------- */
 
 .modal-close {
     position: absolute;
@@ -1468,28 +1535,51 @@ ul {
 
     z-index: 5;
 
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: 1px solid var(--border);
 
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.65);
 
     color: var(--white);
 
     font-size: 1.5rem;
 
+    line-height: 1;
+
     cursor: pointer;
 
-    transition: background var(--transition);
+    transition:
+        background var(--transition),
+        border-color var(--transition);
 }
 
 .modal-close:hover {
     background: var(--red);
+
+    border-color: var(--red);
 }
 
+
+/* -------------------------
+   MODAL IMAGE
+------------------------- */
+
 .modal-image {
-    min-height: 500px;
+    height: 90vh;
+
+    max-height: 700px;
+
+    min-height: 450px;
+
+    overflow: hidden;
+
+    background: var(--black);
 }
 
 .modal-image img {
@@ -1497,14 +1587,23 @@ ul {
     height: 100%;
 
     object-fit: cover;
+    object-position: center top;
 }
+
+
+/* -------------------------
+   MODAL INFORMATION
+------------------------- */
 
 .modal-info {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
 
-    padding: 50px;
+    padding: 55px;
+
+    overflow-y: auto;
 }
 
 .modal-info > span {
@@ -1516,24 +1615,143 @@ ul {
     font-weight: 600;
 
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .modal-info h2 {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+
+    color: var(--white);
 
     font-family: var(--font-title);
 
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
 
+    font-weight: 500;
+
+    line-height: 1;
+}
+
+
+/* -------------------------
+   CHARACTER DETAILS
+------------------------- */
+
+.character-details {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.detail-item {
+    padding: 15px;
+
+    background: var(--black);
+
+    border: 1px solid var(--border);
+}
+
+.detail-item span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--gray);
+
+    font-size: 0.55rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.detail-item strong {
+    color: var(--white);
+
+    font-size: 0.75rem;
     font-weight: 500;
 }
 
-.modal-info p {
-    color: var(--gray-light);
 
-    font-weight: 300;
+/* -------------------------
+   DESCRIPTION
+------------------------- */
+
+.character-description,
+.character-personality {
+    margin-top: 5px;
 }
 
+.character-description h3,
+.character-personality h3 {
+    margin-bottom: 10px;
+
+    color: var(--red-light);
+
+    font-size: 0.65rem;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.character-description p,
+.character-personality p {
+    color: var(--gray-light);
+
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    line-height: 1.8;
+}
+
+
+/* -------------------------
+   MODAL SCROLLBAR
+------------------------- */
+
+.modal-info::-webkit-scrollbar {
+    width: 5px;
+}
+
+.modal-info::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modal-info::-webkit-scrollbar-thumb {
+    background: var(--gray-dark);
+}
+
+.modal-info::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+}
+
+
+/* -------------------------
+   MODAL ANIMATION
+------------------------- */
+
+@keyframes modalAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            scale(0.95)
+            translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
 
 /* =========================================================
    16. FOOTER
