@@ -638,4 +638,38 @@
         height: 40px;
     }
 
+    /* =========================
+    AJUSTE DE TAMAÑO - CANCIONES
+    ========================= */
+
+.music-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.song-card {
+    min-height: 0;
+}
+
+.song-image {
+    height: 240px;
+}
+
+.song-info {
+    padding: 18px;
+}
+
+.song-info h3 {
+    font-size: 1.25rem;
+    margin: 6px 0;
+}
+
+.song-info p {
+    font-size: 0.85rem;
+}
+
+.song-type {
+    font-size: 0.7rem;
+}
+
 }

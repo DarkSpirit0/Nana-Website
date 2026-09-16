@@ -1932,3 +1932,31 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--red);
 }
+/* =========================
+   PERSONAJES - INICIO
+========================= */
+
+.characters-preview .characters-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.characters-preview .character-card {
+    height: 360px;
+}
+
+.characters-preview .character-image {
+    height: 100%;
+}
+
+.characters-preview .character-info {
+    padding: 15px;
+}
+
+.characters-preview .character-info h3 {
+    font-size: 1.15rem;
+}
+
+.characters-preview .character-info p {
+    font-size: 0.8rem;
+}
