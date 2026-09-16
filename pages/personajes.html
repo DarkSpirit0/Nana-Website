@@ -2,15 +2,16 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Personajes de NANA — Conoce a Nana Osaki, Nana Komatsu, BLACK STONES, TRAPNEST y todos los personajes principales.">
+    <title>Personajes | NANA</title>
 
-    <title>NANA — Characters</title>
+    <meta
+        name="description"
+        content="Personajes principales de NANA.">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -18,90 +19,65 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+    <!-- NAVBAR -->
 
     <header class="navbar">
 
-        <div class="nav-container">
+        <div class="container nav-container">
 
             <a href="../index.html" class="logo">
                 NANA
             </a>
 
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Abrir menú">
-
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
                 <span></span>
-
             </button>
 
             <nav class="nav-menu" id="navMenu">
 
-                <a href="../index.html"
-                    class="nav-link"
-                    data-i18n="nav.home">
-                    HOME
+                <a href="../index.html" data-i18n="home">
+                    Inicio
                 </a>
 
-                <a href="personajes.html"
-                    class="nav-link active"
-                    data-i18n="nav.characters">
-                    CHARACTERS
+                <a href="personajes.html" class="active" data-i18n="characters">
+                    Personajes
                 </a>
 
-                <a href="historia.html"
-                    class="nav-link"
-                    data-i18n="nav.story">
-                    STORY
+                <a href="historia.html" data-i18n="story">
+                    Historia
                 </a>
 
-                <a href="musica.html"
-                    class="nav-link"
-                    data-i18n="nav.music">
-                    MUSIC
+                <a href="musica.html" data-i18n="music">
+                    Música
                 </a>
 
-                <div class="nav-bands">
+                <a href="black-stones.html" data-i18n="black_stones">
+                    BLACK STONES
+                </a>
 
-                    <a href="black-stones.html"
-                        class="nav-link">
-                        BLACK STONES
-                    </a>
-
-                    <a href="trapnest.html"
-                        class="nav-link">
-                        TRAPNEST
-                    </a>
-
-                </div>
-
-                <!-- Language -->
+                <a href="trapnest.html" data-i18n="trapnest">
+                    TRAPNEST
+                </a>
 
                 <div class="language-selector">
 
-                    <button
-                        class="language-btn active"
-                        data-language="es">
-                        🇪🇸 ES
+                    <button data-language="es" class="active">
+                        ES
                     </button>
 
-                    <button
-                        class="language-btn"
-                        data-language="en">
-                        🇬🇧 EN
+                    <span>/</span>
+
+                    <button data-language="en">
+                        EN
                     </button>
 
                 </div>
@@ -115,27 +91,22 @@
 
     <main>
 
-        <!-- =========================
-             PAGE HERO
-        ========================== -->
+        <!-- PAGE HERO -->
 
-        <section class="page-hero characters-hero">
+        <section class="page-hero">
 
-            <div class="page-hero-overlay"></div>
+            <div class="container reveal">
 
-            <div class="page-hero-content reveal">
+                <span class="section-number">
+                    01
+                </span>
 
-                <p class="section-label"
-                    data-i18n="charactersPage.label">
-                    THE PEOPLE
-                </p>
-
-                <h1 data-i18n="charactersPage.title">
-                    CHARACTERS
+                <h1 data-i18n="characters_page_title">
+                    PERSONAJES
                 </h1>
 
-                <p data-i18n="charactersPage.description">
-                    The people who make the story of NANA unforgettable.
+                <p data-i18n="characters_page_subtitle">
+                    Conoce a los personajes que forman parte de esta historia.
                 </p>
 
             </div>
@@ -143,731 +114,473 @@
         </section>
 
 
-        <!-- =========================
-             FILTERS
-        ========================== -->
+        <!-- FILTERS -->
 
-        <section class="characters-page">
+        <section class="section characters-page">
 
-            <div class="section-container">
+            <div class="container">
 
                 <div class="character-filters reveal">
 
                     <button
-                        class="filter-btn active"
+                        class="filter-button active"
                         data-filter="all"
-                        data-i18n="filters.all">
-                        ALL
+                        data-i18n="filter_all">
+                        Todos
                     </button>
 
                     <button
-                        class="filter-btn"
+                        class="filter-button"
                         data-filter="protagonists"
-                        data-i18n="filters.protagonists">
-                        PROTAGONISTS
+                        data-i18n="filter_protagonists">
+                        Protagonistas
                     </button>
 
                     <button
-                        class="filter-btn"
-                        data-filter="blast">
+                        class="filter-button"
+                        data-filter="blast"
+                        data-i18n="filter_blast">
                         BLACK STONES
                     </button>
 
                     <button
-                        class="filter-btn"
-                        data-filter="trapnest">
+                        class="filter-button"
+                        data-filter="trapnest"
+                        data-i18n="filter_trapnest">
                         TRAPNEST
                     </button>
 
                     <button
-                        class="filter-btn"
+                        class="filter-button"
                         data-filter="other"
-                        data-i18n="filters.other">
-                        OTHER
+                        data-i18n="filter_other">
+                        Otros
                     </button>
 
                 </div>
 
 
-                <!-- =========================
-                     PROTAGONISTS
-                ========================== -->
+                <!-- CHARACTERS GRID -->
 
-                <div class="character-section">
+                <div class="characters-grid">
 
-                    <div class="character-section-heading reveal">
 
-                        <span class="section-number">
-                            01
-                        </span>
+                    <!-- NANA OSAKI -->
 
-                        <div>
+                    <article
+                        class="character-profile reveal"
+                        data-category="protagonists blast"
+                        data-character="nana_osaki">
 
-                            <p class="section-label"
-                                data-i18n="charactersPage.protagonistsLabel">
-                                PROTAGONISTS
-                            </p>
+                        <div class="character-image">
 
-                            <h2>
-                                NANA × NANA
-                            </h2>
+                            <img
+                                src="../assets/images/characters/nana-osaki.jpg"
+                                alt="Nana Osaki">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="character-info">
 
-
-                    <div class="character-catalog">
-
-                        <!-- Nana Osaki -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="protagonists"
-                            data-character="nana-osaki">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/nana-osaki.jpg"
-                                    alt="Nana Osaki">
-
-                                <div class="character-profile-number">
-                                    01
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    BLACK STONES
-                                </span>
-
-                                <h3>
-                                    Nana Osaki
-                                </h3>
-
-                                <p data-i18n="characterCards.nanaOsaki">
-                                    The strong and passionate vocalist
-                                    of BLACK STONES.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="nana-osaki"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Nana Komatsu -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="protagonists"
-                            data-character="nana-komatsu">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/nana-komatsu.jpg"
-                                    alt="Nana Komatsu">
-
-                                <div class="character-profile-number">
-                                    02
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    APARTMENT 707
-                                </span>
-
-                                <h3>
-                                    Nana Komatsu
-                                </h3>
-
-                                <p data-i18n="characterCards.nanaKomatsu">
-                                    A romantic young woman searching
-                                    for love and happiness.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="nana-komatsu"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     BLACK STONES
-                ========================== -->
-
-                <div class="character-section">
-
-                    <div class="character-section-heading reveal">
-
-                        <span class="section-number">
-                            02
-                        </span>
-
-                        <div>
-
-                            <p class="section-label">
-                                BAND
-                            </p>
-
-                            <h2>
+                            <span>
                                 BLACK STONES
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="character-catalog">
-
-                        <!-- Nana -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="blast"
-                            data-character="nana-osaki">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/nana-osaki.jpg"
-                                    alt="Nana Osaki">
-
-                                <div class="character-profile-number">
-                                    01
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    VOCALIST
-                                </span>
-
-                                <h3>
-                                    Nana Osaki
-                                </h3>
-
-                                <p data-i18n="blast.nana">
-                                    The charismatic vocalist and leader
-                                    of BLACK STONES.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="nana-osaki"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Nobu -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="blast"
-                            data-character="nobu">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/nobu.jpg"
-                                    alt="Nobu Terashima">
-
-                                <div class="character-profile-number">
-                                    02
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    GUITARIST
-                                </span>
-
-                                <h3>
-                                    Nobu Terashima
-                                </h3>
-
-                                <p data-i18n="blast.nobu">
-                                    A guitarist, songwriter and one of
-                                    Nana's closest friends.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="nobu"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Yasu -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="blast"
-                            data-character="yasu">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/yasu.jpg"
-                                    alt="Yasu">
-
-                                <div class="character-profile-number">
-                                    03
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    DRUMMER
-                                </span>
-
-                                <h3>
-                                    Yasu
-                                </h3>
-
-                                <p data-i18n="blast.yasu">
-                                    The calm and reliable drummer
-                                    of BLACK STONES.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="yasu"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Shin -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="blast"
-                            data-character="shin">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/shin.jpg"
-                                    alt="Shin">
-
-                                <div class="character-profile-number">
-                                    04
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    BASSIST
-                                </span>
-
-                                <h3>
-                                    Shin
-                                </h3>
-
-                                <p data-i18n="blast.shin">
-                                    The young bassist of BLACK STONES.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="shin"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     TRAPNEST
-                ========================== -->
-
-                <div class="character-section">
-
-                    <div class="character-section-heading reveal">
-
-                        <span class="section-number">
-                            03
-                        </span>
-
-                        <div>
-
-                            <p class="section-label">
-                                BAND
-                            </p>
+                            </span>
 
                             <h2>
-                                TRAPNEST
+                                Nana Osaki
                             </h2>
 
-                        </div>
-
-                    </div>
-
-
-                    <div class="character-catalog">
-
-                        <!-- Ren -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="trapnest"
-                            data-character="ren">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/ren.jpg"
-                                    alt="Ren Honjo">
-
-                                <div class="character-profile-number">
-                                    01
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    GUITARIST
-                                </span>
-
-                                <h3>
-                                    Ren Honjo
-                                </h3>
-
-                                <p data-i18n="trapnest.ren">
-                                    The guitarist of TRAPNEST and
-                                    Nana Osaki's former partner.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="ren"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Takumi -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="trapnest"
-                            data-character="takumi">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/takumi.jpg"
-                                    alt="Takumi Ichinose">
-
-                                <div class="character-profile-number">
-                                    02
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    BASSIST
-                                </span>
-
-                                <h3>
-                                    Takumi Ichinose
-                                </h3>
-
-                                <p data-i18n="trapnest.takumi">
-                                    The bassist and leader of TRAPNEST.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="takumi"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Reira -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="trapnest"
-                            data-character="reira">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/reira.jpg"
-                                    alt="Reira Serizawa">
-
-                                <div class="character-profile-number">
-                                    03
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    VOCALIST
-                                </span>
-
-                                <h3>
-                                    Reira Serizawa
-                                </h3>
-
-                                <p data-i18n="trapnest.reira">
-                                    The beautiful and talented vocalist
-                                    of TRAPNEST.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="reira"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-
-                        <!-- Naoki -->
-
-                        <article
-                            class="character-profile reveal"
-                            data-category="trapnest"
-                            data-character="naoki">
-
-                            <div class="character-profile-image">
-
-                                <img
-                                    src="../assets/images/characters/naoki.jpg"
-                                    alt="Naoki Fujieda">
-
-                                <div class="character-profile-number">
-                                    04
-                                </div>
-
-                            </div>
-
-                            <div class="character-profile-content">
-
-                                <span>
-                                    DRUMMER
-                                </span>
-
-                                <h3>
-                                    Naoki Fujieda
-                                </h3>
-
-                                <p data-i18n="trapnest.naoki">
-                                    The drummer of TRAPNEST and
-                                    one of its founding members.
-                                </p>
-
-                                <button
-                                    class="character-more"
-                                    data-character="naoki"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =========================
-                     OTHER CHARACTERS
-                ========================== -->
-
-                <div class="character-section">
-
-                    <div class="character-section-heading reveal">
-
-                        <span class="section-number">
-                            04
-                        </span>
-
-                        <div>
-
-                            <p class="section-label"
-                                data-i18n="filters.other">
-                                OTHER
+                            <p>
+                                Vocalista
                             </p>
 
-                            <h2 data-i18n="charactersPage.otherTitle">
-                                THEIR WORLD
-                            </h2>
+                        </div>
+
+                    </article>
+
+
+                    <!-- NANA KOMATSU -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="protagonists"
+                        data-character="nana_komatsu">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/nana-komatsu.jpg"
+                                alt="Nana Komatsu">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="character-info">
+
+                            <span>
+                                PROTAGONIST
+                            </span>
+
+                            <h2>
+                                Nana Komatsu
+                            </h2>
+
+                            <p>
+                                La soñadora
+                            </p>
+
+                        </div>
+
+                    </article>
 
 
-                    <div class="character-catalog">
+                    <!-- NOBU -->
 
-                        <!-- Junko -->
+                    <article
+                        class="character-profile reveal"
+                        data-category="blast"
+                        data-character="nobu">
 
-                        <article
-                            class="character-profile reveal"
-                            data-category="other"
-                            data-character="junko">
+                        <div class="character-image">
 
-                            <div class="character-profile-image">
+                            <img
+                                src="../assets/images/characters/nobu.jpg"
+                                alt="Nobu">
 
-                                <img
-                                    src="../assets/images/characters/junko.jpg"
-                                    alt="Junko Saotome">
-
-                                <div class="character-profile-number">
-                                    01
-                                </div>
-
+                            <div class="character-overlay">
+                                <span>VIEW</span>
                             </div>
 
-                            <div class="character-profile-content">
+                        </div>
 
-                                <span>
-                                    FRIEND
-                                </span>
+                        <div class="character-info">
 
-                                <h3>
-                                    Junko Saotome
-                                </h3>
+                            <span>
+                                BLACK STONES
+                            </span>
 
-                                <p data-i18n="other.junko">
-                                    Nana Komatsu's close friend and
-                                    one of the people she relies on.
-                                </p>
+                            <h2>
+                                Nobu Terashima
+                            </h2>
 
-                                <button
-                                    class="character-more"
-                                    data-character="junko"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
+                            <p>
+                                Guitarrista
+                            </p>
 
+                        </div>
+
+                    </article>
+
+
+                    <!-- YASU -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="blast"
+                        data-character="yasu">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/yasu.jpg"
+                                alt="Yasu">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
                             </div>
 
-                        </article>
+                        </div>
+
+                        <div class="character-info">
+
+                            <span>
+                                BLACK STONES
+                            </span>
+
+                            <h2>
+                                Yasu Takagi
+                            </h2>
+
+                            <p>
+                                Batería
+                            </p>
+
+                        </div>
+
+                    </article>
 
 
-                        <!-- Shoji -->
+                    <!-- SHIN -->
 
-                        <article
-                            class="character-profile reveal"
-                            data-category="other"
-                            data-character="shoji">
+                    <article
+                        class="character-profile reveal"
+                        data-category="blast"
+                        data-character="shin">
 
-                            <div class="character-profile-image">
+                        <div class="character-image">
 
-                                <img
-                                    src="../assets/images/characters/shoji.jpg"
-                                    alt="Shoji Endo">
+                            <img
+                                src="../assets/images/characters/shin.jpg"
+                                alt="Shin">
 
-                                <div class="character-profile-number">
-                                    02
-                                </div>
-
+                            <div class="character-overlay">
+                                <span>VIEW</span>
                             </div>
 
-                            <div class="character-profile-content">
+                        </div>
 
-                                <span>
-                                    TOKYO
-                                </span>
+                        <div class="character-info">
 
-                                <h3>
-                                    Shoji Endo
-                                </h3>
+                            <span>
+                                BLACK STONES
+                            </span>
 
-                                <p data-i18n="other.shoji">
-                                    Nana Komatsu's former boyfriend.
-                                </p>
+                            <h2>
+                                Shinichi Okazaki
+                            </h2>
 
-                                <button
-                                    class="character-more"
-                                    data-character="shoji"
-                                    data-i18n="general.more">
-                                    VIEW PROFILE →
-                                </button>
+                            <p>
+                                Bajista
+                            </p>
 
+                        </div>
+
+                    </article>
+
+
+                    <!-- REN -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="trapnest"
+                        data-character="ren">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/ren.jpg"
+                                alt="Ren">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
                             </div>
 
-                        </article>
+                        </div>
 
-                    </div>
+                        <div class="character-info">
+
+                            <span>
+                                TRAPNEST
+                            </span>
+
+                            <h2>
+                                Ren Honjo
+                            </h2>
+
+                            <p>
+                                Guitarrista
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TAKUMI -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="trapnest"
+                        data-character="takumi">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/takumi.jpg"
+                                alt="Takumi">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <span>
+                                TRAPNEST
+                            </span>
+
+                            <h2>
+                                Takumi Ichinose
+                            </h2>
+
+                            <p>
+                                Bajista
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- REIRA -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="trapnest"
+                        data-character="reira">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/reira.jpg"
+                                alt="Reira">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <span>
+                                TRAPNEST
+                            </span>
+
+                            <h2>
+                                Reira Serizawa
+                            </h2>
+
+                            <p>
+                                Vocalista
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- NAOKI -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="trapnest"
+                        data-character="naoki">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/naoki.jpg"
+                                alt="Naoki">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <span>
+                                TRAPNEST
+                            </span>
+
+                            <h2>
+                                Naoki Fujieda
+                            </h2>
+
+                            <p>
+                                Batería
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- JUNKO -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="other"
+                        data-character="junko">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/junko.jpg"
+                                alt="Junko">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <span>
+                                OTHER
+                            </span>
+
+                            <h2>
+                                Junko Saotome
+                            </h2>
+
+                            <p>
+                                Amiga
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SHOJI -->
+
+                    <article
+                        class="character-profile reveal"
+                        data-category="other"
+                        data-character="shoji">
+
+                        <div class="character-image">
+
+                            <img
+                                src="../assets/images/characters/shoji.jpg"
+                                alt="Shoji">
+
+                            <div class="character-overlay">
+                                <span>VIEW</span>
+                            </div>
+
+                        </div>
+
+                        <div class="character-info">
+
+                            <span>
+                                OTHER
+                            </span>
+
+                            <h2>
+                                Shoji Endo
+                            </h2>
+
+                            <p>
+                                Estudiante de arte
+                            </p>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -875,169 +588,107 @@
 
         </section>
 
+
+        <!-- MODAL -->
+
+        <div class="character-modal" id="characterModal">
+
+            <div class="modal-content">
+
+                <button
+                    class="modal-close"
+                    aria-label="Cerrar">
+                    ×
+                </button>
+
+                <div class="modal-image">
+
+                    <img
+                        id="modalCharacterImage"
+                        src=""
+                        alt="">
+
+                </div>
+
+                <div class="modal-info">
+
+                    <span id="modalCharacterRole">
+                    </span>
+
+                    <h2 id="modalCharacterName">
+                    </h2>
+
+                    <p id="modalCharacterDescription">
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 
 
-    <!-- =========================
-         CHARACTER MODAL
-    ========================== -->
-
-    <div
-        class="character-modal"
-        id="characterModal"
-        aria-hidden="true">
-
-        <div class="modal-overlay"></div>
-
-        <div class="modal-content">
-
-            <button
-                class="modal-close"
-                id="modalClose"
-                aria-label="Cerrar">
-                ×
-            </button>
-
-            <div class="modal-image">
-
-                <img
-                    id="modalCharacterImage"
-                    src=""
-                    alt="">
-
-            </div>
-
-            <div class="modal-info">
-
-                <span id="modalCharacterRole">
-                    CHARACTER
-                </span>
-
-                <h2 id="modalCharacterName">
-                    Character
-                </h2>
-
-                <p id="modalCharacterDescription">
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FOOTER -->
 
     <footer class="footer">
 
-        <div class="footer-container">
+        <div class="container footer-grid">
 
-            <div class="footer-brand">
+            <div>
 
-                <h2>
+                <div class="logo">
                     NANA
-                </h2>
+                </div>
 
-                <p data-i18n="footer.description">
-                    Two girls. One story.
+                <p data-i18n="footer_text">
+                    Fan website dedicado a NANA.
                 </p>
 
             </div>
 
+            <div>
 
-            <div class="footer-links">
+                <h4>NAVIGATION</h4>
 
-                <div>
+                <a href="../index.html">Home</a>
+                <a href="personajes.html">Characters</a>
+                <a href="historia.html">Story</a>
+                <a href="musica.html">Music</a>
 
-                    <h3 data-i18n="footer.navigation">
-                        NAVIGATION
-                    </h3>
+            </div>
 
-                    <a href="../index.html"
-                        data-i18n="nav.home">
-                        HOME
-                    </a>
+            <div>
 
-                    <a href="personajes.html"
-                        data-i18n="nav.characters">
-                        CHARACTERS
-                    </a>
+                <h4>BANDS</h4>
 
-                    <a href="historia.html"
-                        data-i18n="nav.story">
-                        STORY
-                    </a>
+                <a href="black-stones.html">
+                    BLACK STONES
+                </a>
 
-                    <a href="musica.html"
-                        data-i18n="nav.music">
-                        MUSIC
-                    </a>
-
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        BANDS
-                    </h3>
-
-                    <a href="black-stones.html">
-                        BLACK STONES
-                    </a>
-
-                    <a href="trapnest.html">
-                        TRAPNEST
-                    </a>
-
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        PROJECT
-                    </h3>
-
-                    <a href="#"
-                        target="_blank">
-                        GitHub
-                    </a>
-
-                    <a href="#"
-                        target="_blank">
-                        Netlify
-                    </a>
-
-                </div>
+                <a href="trapnest.html">
+                    TRAPNEST
+                </a>
 
             </div>
 
         </div>
-
 
         <div class="footer-bottom">
 
             <p>
-                © 2026 NANA Fan Project
+                © <span id="currentYear"></span> NANA Fan Website
             </p>
 
-            <p data-i18n="footer.disclaimer">
-                Fan project • Non-commercial • NANA and its characters
-                belong to their respective owners.
+            <p data-i18n="disclaimer">
+                Proyecto personal y no comercial.
             </p>
 
         </div>
 
     </footer>
 
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
 
     <script src="../js/main.js"></script>
     <script src="../js/menu.js"></script>

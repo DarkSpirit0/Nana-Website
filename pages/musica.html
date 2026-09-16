@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Música | NANA</title>
+
+    <meta
+        name="description"
+        content="La música de NANA, BLACK STONES y TRAPNEST.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/music.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+            NANA
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../index.html" data-i18n="home">
+                Inicio
+            </a>
+
+            <a href="personajes.html" data-i18n="characters">
+                Personajes
+            </a>
+
+            <a href="historia.html" data-i18n="story">
+                Historia
+            </a>
+
+            <a href="musica.html" class="active" data-i18n="music">
+                Música
+            </a>
+
+            <a href="black-stones.html" data-i18n="black_stones">
+                BLACK STONES
+            </a>
+
+            <a href="trapnest.html" data-i18n="trapnest">
+                TRAPNEST
+            </a>
+
+            <div class="language-selector">
+
+                <button data-language="es" class="active">
+                    ES
+                </button>
+
+                <span>/</span>
+
+                <button data-language="en">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="music-page">
+
+    <!-- HERO -->
+
+    <section class="page-hero music-page-hero">
+
+        <div class="container reveal">
+
+            <span class="section-number">
+                05
+            </span>
+
+            <h1 data-i18n="music_title">
+                MÚSICA
+            </h1>
+
+            <p>
+                The soundtrack of NANA
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <h2>
+                    Music of NANA
+                </h2>
+
+            </div>
+
+            <div class="intro-text reveal">
+
+                <p>
+                    La música es una parte fundamental de NANA.
+                    Las canciones de BLACK STONES y TRAPNEST acompañan
+                    algunos de los momentos más importantes de la historia.
+                </p>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="music-filters reveal">
+
+                <button
+                    class="music-filter active"
+                    data-filter="all">
+                    ALL
+                </button>
+
+                <button
+                    class="music-filter"
+                    data-filter="blast">
+                    BLACK STONES
+                </button>
+
+                <button
+                    class="music-filter"
+                    data-filter="trapnest">
+                    TRAPNEST
+                </button>
+
+            </div>
+
+
+            <!-- PLAYER -->
+
+            <div class="music-player-container reveal">
+
+                <div class="player-header">
+
+                    <div>
+
+                        <span>
+                            NOW PLAYING
+                        </span>
+
+                        <h3>
+                            NANA
+                        </h3>
+
+                    </div>
+
+                    <button
+                        id="stopMusic"
+                        class="btn btn-outline">
+                        STOP
+                    </button>
+
+                </div>
+
+                <div class="youtube-player">
+
+                    <iframe
+                        id="musicPlayer"
+                        src=""
+                        title="NANA Music Player"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONGS -->
+
+            <div class="music-grid">
+
+
+                <!-- ROSE -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="blast">
+
+                    <div class="song-number">
+                        01
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            BLACK STONES
+                        </span>
+
+                        <h3>
+                            Rose
+                        </h3>
+
+                        <p>
+                            Anna Tsuchiya
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+
+                <!-- LUCY -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="blast">
+
+                    <div class="song-number">
+                        02
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            BLACK STONES
+                        </span>
+
+                        <h3>
+                            Lucy
+                        </h3>
+
+                        <p>
+                            Anna Tsuchiya
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+
+                <!-- KUROI NAMIDA -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="blast">
+
+                    <div class="song-number">
+                        03
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            BLACK STONES
+                        </span>
+
+                        <h3>
+                            Kuroi Namida
+                        </h3>
+
+                        <p>
+                            Anna Tsuchiya
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+
+                <!-- A LITTLE PAIN -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="trapnest">
+
+                    <div class="song-number">
+                        04
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            TRAPNEST
+                        </span>
+
+                        <h3>
+                            A Little Pain
+                        </h3>
+
+                        <p>
+                            OLIVIA
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+
+                <!-- WISH -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="trapnest">
+
+                    <div class="song-number">
+                        05
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            TRAPNEST
+                        </span>
+
+                        <h3>
+                            Wish
+                        </h3>
+
+                        <p>
+                            OLIVIA
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+
+                <!-- STARLESS NIGHT -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="trapnest">
+
+                    <div class="song-number">
+                        06
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            TRAPNEST
+                        </span>
+
+                        <h3>
+                            Starless Night
+                        </h3>
+
+                        <p>
+                            OLIVIA
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+
+                <!-- WINTER SLEEP -->
+
+                <article
+                    class="song-card reveal"
+                    data-group="trapnest">
+
+                    <div class="song-number">
+                        07
+                    </div>
+
+                    <div class="song-info">
+
+                        <span>
+                            TRAPNEST
+                        </span>
+
+                        <h3>
+                            Winter Sleep
+                        </h3>
+
+                        <p>
+                            OLIVIA
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="music-play"
+                        data-video="">
+                        ▶
+                    </button>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <div class="logo">
+                NANA
+            </div>
+
+            <p data-i18n="footer_text">
+                Fan website dedicado a NANA.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>NAVIGATION</h4>
+
+            <a href="../index.html">Home</a>
+            <a href="personajes.html">Characters</a>
+            <a href="historia.html">Story</a>
+            <a href="musica.html">Music</a>
+
+        </div>
+
+        <div>
+
+            <h4>BANDS</h4>
+
+            <a href="black-stones.html">
+                BLACK STONES
+            </a>
+
+            <a href="trapnest.html">
+                TRAPNEST
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="currentYear"></span> NANA Fan Website
+        </p>
+
+        <p data-i18n="disclaimer">
+            Proyecto personal y no comercial.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/language.js"></script>
+<script src="../js/music.js"></script>
+<script src="../js/animations.js"></script>
+
+</body>
+
+</html>

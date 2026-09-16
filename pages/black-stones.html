@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLACK STONES | NANA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+            NANA
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="../index.html" data-i18n="home">
+                Inicio
+            </a>
+
+            <a href="personajes.html" data-i18n="characters">
+                Personajes
+            </a>
+
+            <a href="historia.html" data-i18n="story">
+                Historia
+            </a>
+
+            <a href="musica.html" data-i18n="music">
+                Música
+            </a>
+
+            <a href="black-stones.html" class="active" data-i18n="black_stones">
+                BLACK STONES
+            </a>
+
+            <a href="trapnest.html" data-i18n="trapnest">
+                TRAPNEST
+            </a>
+
+            <div class="language-selector">
+
+                <button data-language="es" class="active">
+                    ES
+                </button>
+
+                <span>/</span>
+
+                <button data-language="en">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero band-page-hero">
+
+        <div class="container reveal">
+
+            <span class="section-number">
+                03
+            </span>
+
+            <h1>
+                BLACK STONES
+            </h1>
+
+            <p>
+                Punk. Dreams. Friendship.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <h2>
+                    BLACK STONES
+                </h2>
+
+            </div>
+
+
+            <div class="intro-text reveal">
+
+                <p>
+                    BLACK STONES, también conocida como BLAST, es la banda
+                    formada alrededor de Nana Osaki y sus amigos.
+                </p>
+
+                <p>
+                    Su música representa la personalidad rebelde de Nana
+                    y su deseo de conseguir una vida independiente.
+                </p>
+
+            </div>
+
+
+            <div class="characters-preview-grid">
+
+
+                <article class="character-preview reveal">
+
+                    <img
+                        src="../assets/images/characters/nana-osaki.jpg"
+                        alt="Nana Osaki">
+
+                    <div>
+
+                        <span>
+                            VOCAL
+                        </span>
+
+                        <h3>
+                            Nana Osaki
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="character-preview reveal">
+
+                    <img
+                        src="../assets/images/characters/nobu.jpg"
+                        alt="Nobu">
+
+                    <div>
+
+                        <span>
+                            GUITAR
+                        </span>
+
+                        <h3>
+                            Nobu Terashima
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="character-preview reveal">
+
+                    <img
+                        src="../assets/images/characters/yasu.jpg"
+                        alt="Yasu">
+
+                    <div>
+
+                        <span>
+                            DRUMS
+                        </span>
+
+                        <h3>
+                            Yasu Takagi
+                        </h3>
+
+                    </div>
+
+                </article>
+
+
+                <article class="character-preview reveal">
+
+                    <img
+                        src="../assets/images/characters/shin.jpg"
+                        alt="Shin">
+
+                    <div>
+
+                        <span>
+                            BASS
+                        </span>
+
+                        <h3>
+                            Shinichi Okazaki
+                        </h3>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <div class="logo">
+                NANA
+            </div>
+
+            <p data-i18n="footer_text">
+                Fan website dedicado a NANA.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>NAVIGATION</h4>
+
+            <a href="../index.html">Home</a>
+            <a href="personajes.html">Characters</a>
+            <a href="historia.html">Story</a>
+            <a href="musica.html">Music</a>
+
+        </div>
+
+        <div>
+
+            <h4>BANDS</h4>
+
+            <a href="black-stones.html">
+                BLACK STONES
+            </a>
+
+            <a href="trapnest.html">
+                TRAPNEST
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="currentYear"></span> NANA Fan Website
+        </p>
+
+        <p data-i18n="disclaimer">
+            Proyecto personal y no comercial.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/language.js"></script>
+<script src="../js/animations.js"></script>
+
+</body>
+
+</html>

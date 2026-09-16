@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>NANA | Fan Website</title>
+
     <meta name="description"
-        content="NANA — Fan website dedicado al anime y manga de Ai Yazawa. Descubre sus personajes, historia, bandas y música.">
+        content="Fan website dedicado a NANA, sus personajes, historia, música y bandas.">
 
-    <title>NANA — Two Girls. One Story.</title>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -18,7 +17,6 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -31,7 +29,7 @@
 
     <header class="navbar">
 
-        <div class="nav-container">
+        <div class="container nav-container">
 
             <a href="index.html" class="logo">
                 NANA
@@ -45,44 +43,40 @@
 
             <nav class="nav-menu" id="navMenu">
 
-                <a href="index.html" class="nav-link active" data-i18n="nav.home">
-                    HOME
+                <a href="index.html" class="active" data-i18n="home">
+                    Inicio
                 </a>
 
-                <a href="pages/personajes.html" class="nav-link" data-i18n="nav.characters">
-                    CHARACTERS
+                <a href="pages/personajes.html" data-i18n="characters">
+                    Personajes
                 </a>
 
-                <a href="pages/historia.html" class="nav-link" data-i18n="nav.story">
-                    STORY
+                <a href="pages/historia.html" data-i18n="story">
+                    Historia
                 </a>
 
-                <a href="pages/musica.html" class="nav-link" data-i18n="nav.music">
-                    MUSIC
+                <a href="pages/musica.html" data-i18n="music">
+                    Música
                 </a>
 
-                <div class="nav-bands">
+                <a href="pages/black-stones.html" data-i18n="black_stones">
+                    BLACK STONES
+                </a>
 
-                    <a href="pages/black-stones.html" class="nav-link">
-                        BLACK STONES
-                    </a>
-
-                    <a href="pages/trapnest.html" class="nav-link">
-                        TRAPNEST
-                    </a>
-
-                </div>
-
-                <!-- Language selector -->
+                <a href="pages/trapnest.html" data-i18n="trapnest">
+                    TRAPNEST
+                </a>
 
                 <div class="language-selector">
 
-                    <button class="language-btn active" data-language="es">
-                        🇪🇸 ES
+                    <button data-language="es" class="active">
+                        ES
                     </button>
 
-                    <button class="language-btn" data-language="en">
-                        🇬🇧 EN
+                    <span>/</span>
+
+                    <button data-language="en">
+                        EN
                     </button>
 
                 </div>
@@ -106,34 +100,29 @@
 
             <div class="hero-content reveal">
 
-                <p class="hero-small" data-i18n="hero.small">
-                    TOKYO • 707 • NANA
+                <p class="hero-small">
+                    NANA
                 </p>
 
-                <h1>NANA</h1>
+                <h1>
+                    NANA
+                </h1>
 
-                <h2 data-i18n="hero.title">
-                    TWO GIRLS. ONE STORY.
-                </h2>
-
-                <p class="hero-description" data-i18n="hero.description">
-                    Two strangers. One apartment. A story that would change their lives forever.
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    DOS CHICAS. UNA HISTORIA.
                 </p>
 
-                <a href="#intro" class="btn btn-primary" data-i18n="hero.button">
-                    EXPLORE NANA
+                <a href="#intro" class="btn btn-primary" data-i18n="hero_button">
+                    Explorar
                 </a>
 
-                <div class="scroll-indicator">
+            </div>
 
-                    <span>↓</span>
-
-                    <p data-i18n="hero.scroll">
-                        SCROLL TO DISCOVER
-                    </p>
-
-                </div>
-
+            <div class="hero-scroll">
+                <span data-i18n="scroll">
+                    Desliza para descubrir
+                </span>
+                <span>↓</span>
             </div>
 
         </section>
@@ -143,9 +132,9 @@
              INTRO
         ========================== -->
 
-        <section class="section intro" id="intro">
+        <section class="section intro-section" id="intro">
 
-            <div class="section-container">
+            <div class="container">
 
                 <div class="section-heading reveal">
 
@@ -153,64 +142,41 @@
                         01
                     </span>
 
-                    <p class="section-label" data-i18n="intro.label">
-                        THE STORY
-                    </p>
-
-                    <h2 data-i18n="intro.title">
-                        Two girls.<br>
-                        One apartment.<br>
-                        One story.
+                    <h2 data-i18n="intro_title">
+                        Dos Nanas
                     </h2>
-
-                    <p class="section-description" data-i18n="intro.description">
-                        Nana Osaki and Nana Komatsu couldn't be more different.
-                        One dreams of becoming a famous rock singer. The other
-                        simply wants to find love and happiness.
-                    </p>
 
                 </div>
 
 
-                <div class="nana-cards">
+                <div class="intro-grid">
 
-                    <!-- Nana Osaki -->
+                    <article class="intro-card reveal">
 
-                    <article class="nana-card reveal">
-
-                        <div class="card-image">
-
+                        <div class="intro-image">
                             <img
                                 src="assets/images/characters/nana-osaki.jpg"
                                 alt="Nana Osaki">
-
-                            <div class="card-overlay"></div>
-
-                            <span class="card-number">
-                                01
-                            </span>
-
                         </div>
 
-                        <div class="card-content">
+                        <div class="intro-content">
 
-                            <p class="character-role">
-                                BLACK STONES
-                            </p>
+                            <span data-i18n="nana_osaki_role">
+                                Vocalista de BLACK STONES
+                            </span>
 
                             <h3>
                                 Nana Osaki
                             </h3>
 
-                            <p data-i18n="characters.osaki">
-                                A passionate punk rock singer determined
-                                to make her dream come true.
+                            <p data-i18n="nana_osaki_description">
+                                Una cantante punk decidida a triunfar en Tokio sin renunciar a sus sueños.
                             </p>
 
-                            <a href="pages/personajes.html#nana-osaki"
-                                class="text-link"
-                                data-i18n="general.discover">
-                                DISCOVER →
+                            <a
+                                href="pages/personajes.html"
+                                class="text-link">
+                                →
                             </a>
 
                         </div>
@@ -218,43 +184,32 @@
                     </article>
 
 
-                    <!-- Nana Komatsu -->
+                    <article class="intro-card reveal">
 
-                    <article class="nana-card reveal">
-
-                        <div class="card-image">
-
+                        <div class="intro-image">
                             <img
                                 src="assets/images/characters/nana-komatsu.jpg"
                                 alt="Nana Komatsu">
-
-                            <div class="card-overlay"></div>
-
-                            <span class="card-number">
-                                02
-                            </span>
-
                         </div>
 
-                        <div class="card-content">
+                        <div class="intro-content">
 
-                            <p class="character-role">
-                                TOKYO
-                            </p>
+                            <span data-i18n="nana_komatsu_role">
+                                La soñadora
+                            </span>
 
                             <h3>
                                 Nana Komatsu
                             </h3>
 
-                            <p data-i18n="characters.komatsu">
-                                A romantic and emotional girl searching
-                                for love, friendship and a place to belong.
+                            <p data-i18n="nana_komatsu_description">
+                                Una joven romántica que busca comenzar una nueva vida junto a la persona que ama.
                             </p>
 
-                            <a href="pages/personajes.html#nana-komatsu"
-                                class="text-link"
-                                data-i18n="general.discover">
-                                DISCOVER →
+                            <a
+                                href="pages/personajes.html"
+                                class="text-link">
+                                →
                             </a>
 
                         </div>
@@ -269,40 +224,35 @@
 
 
         <!-- =========================
-             APARTMENT 707
+             APARTAMENTO 707
         ========================== -->
 
-        <section class="featured-section apartment">
+        <section class="featured-section">
 
             <div class="featured-background"></div>
 
             <div class="featured-overlay"></div>
 
-            <div class="featured-content reveal">
+            <div class="container featured-content reveal">
 
                 <span class="section-number">
                     02
                 </span>
 
-                <p class="section-label">
-                    TOKYO
-                </p>
-
-                <h2>
-                    APARTMENT<br>
-                    <span>707</span>
+                <h2 data-i18n="apartment_title">
+                    Apartamento 707
                 </h2>
 
-                <p data-i18n="apartment.description">
-                    Two people. One home.
-                    A place where friendship, love,
-                    dreams and heartbreak collide.
+                <p data-i18n="apartment_text">
+                    Dos desconocidas. Dos vidas completamente diferentes.
+                    Un apartamento que cambiará sus vidas para siempre.
                 </p>
 
-                <a href="pages/historia.html"
+                <a
+                    href="pages/historia.html"
                     class="btn btn-outline"
-                    data-i18n="apartment.button">
-                    DISCOVER THE STORY
+                    data-i18n="story_button">
+                    Descubrir la historia
                 </a>
 
             </div>
@@ -311,262 +261,177 @@
 
 
         <!-- =========================
-             BLACK STONES VS TRAPNEST
+             BANDAS
         ========================== -->
 
         <section class="section bands-section">
 
-            <div class="section-container">
+            <div class="container">
 
-                <div class="section-heading centered reveal">
+                <div class="section-heading reveal">
 
                     <span class="section-number">
                         03
                     </span>
 
-                    <p class="section-label" data-i18n="bands.label">
-                        THE MUSIC
-                    </p>
-
-                    <h2 data-i18n="bands.title">
-                        BLACK STONES<br>
-                        <span>×</span> TRAPNEST
+                    <h2 data-i18n="bands_title">
+                        Dos bandas. Dos mundos.
                     </h2>
-
-                    <p data-i18n="bands.description">
-                        Two bands. Two different worlds.
-                        One unforgettable soundtrack.
-                    </p>
 
                 </div>
 
 
                 <div class="bands-grid">
 
-                    <!-- BLACK STONES -->
-
-                    <article class="band-card black-stones reveal">
-
-                        <div class="band-image">
-
-                            <img
-                                src="assets/images/bands/black-stones.jpg"
-                                alt="BLACK STONES">
-
-                        </div>
+                    <a
+                        href="pages/black-stones.html"
+                        class="band-card band-blast reveal">
 
                         <div class="band-content">
 
-                            <p>
-                                NANA OSAKI
-                            </p>
-
-                            <h3>
-                                BLACK STONES
-                            </h3>
-
                             <span>
-                                BLAST
+                                BAND
                             </span>
 
-                            <a href="pages/black-stones.html"
-                                class="btn btn-small"
-                                data-i18n="general.explore">
-                                EXPLORE
-                            </a>
+                            <h3>
+                                BLACK<br>STONES
+                            </h3>
+
+                            <p data-i18n="blast_text">
+                                Punk, rebeldía y una amistad marcada por los sueños.
+                            </p>
+
+                            <span class="band-arrow">
+                                →
+                            </span>
 
                         </div>
 
-                    </article>
+                    </a>
 
 
-                    <!-- TRAPNEST -->
-
-                    <article class="band-card trapnest reveal">
-
-                        <div class="band-image">
-
-                            <img
-                                src="assets/images/bands/trapnest.jpg"
-                                alt="TRAPNEST">
-
-                        </div>
+                    <a
+                        href="pages/trapnest.html"
+                        class="band-card band-trapnest reveal">
 
                         <div class="band-content">
 
-                            <p>
-                                REIRA • REN • TAKUMI
-                            </p>
-
-                            <h3>
-                                TRAPNEST
-                            </h3>
-
                             <span>
-                                TRAPNEST
+                                BAND
                             </span>
 
-                            <a href="pages/trapnest.html"
-                                class="btn btn-small"
-                                data-i18n="general.explore">
-                                EXPLORE
-                            </a>
+                            <h3>
+                                TRAP<br>NEST
+                            </h3>
+
+                            <p data-i18n="trapnest_text">
+                                Éxito, fama y una vida llena de contradicciones.
+                            </p>
+
+                            <span class="band-arrow">
+                                →
+                            </span>
 
                         </div>
 
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FEATURED CHARACTERS
-        ========================== -->
-
-        <section class="section characters-preview">
-
-            <div class="section-container">
-
-                <div class="section-top reveal">
-
-                    <div>
-
-                        <span class="section-number">
-                            04
-                        </span>
-
-                        <p class="section-label" data-i18n="characters.label">
-                            CHARACTERS
-                        </p>
-
-                        <h2 data-i18n="characters.title">
-                            THE PEOPLE<br>
-                            BEHIND THE STORY
-                        </h2>
-
-                    </div>
-
-                    <a href="pages/personajes.html"
-                        class="btn btn-outline dark"
-                        data-i18n="characters.button">
-                        VIEW ALL
                     </a>
 
                 </div>
 
+            </div>
 
-                <div class="characters-grid">
-
-                    <!-- Character 1 -->
-
-                    <article class="character-card reveal">
-
-                        <div class="character-image">
-
-                            <img
-                                src="assets/images/characters/ren.jpg"
-                                alt="Ren Honjo">
-
-                        </div>
-
-                        <div class="character-info">
-
-                            <span>
-                                TRAPNEST
-                            </span>
-
-                            <h3>
-                                Ren Honjo
-                            </h3>
-
-                        </div>
-
-                    </article>
+        </section>
 
 
-                    <!-- Character 2 -->
+        <!-- =========================
+             PERSONAJES DESTACADOS
+        ========================== -->
 
-                    <article class="character-card reveal">
+        <section class="section characters-preview">
 
-                        <div class="character-image">
+            <div class="container">
 
-                            <img
-                                src="assets/images/characters/yasu.jpg"
-                                alt="Yasu">
+                <div class="section-heading reveal">
 
-                        </div>
+                    <span class="section-number">
+                        04
+                    </span>
 
-                        <div class="character-info">
+                    <h2 data-i18n="characters_title">
+                        Personajes
+                    </h2>
 
-                            <span>
-                                BLACK STONES
-                            </span>
+                </div>
 
-                            <h3>
-                                Yasu
-                            </h3>
 
+                <div class="characters-preview-grid">
+
+                    <article class="character-preview reveal">
+
+                        <img
+                            src="assets/images/characters/ren.jpg"
+                            alt="Ren Honjo">
+
+                        <div>
+                            <span>TRAPNEST</span>
+                            <h3>Ren Honjo</h3>
                         </div>
 
                     </article>
 
 
-                    <!-- Character 3 -->
+                    <article class="character-preview reveal">
 
-                    <article class="character-card reveal">
+                        <img
+                            src="assets/images/characters/yasu.jpg"
+                            alt="Yasu">
 
-                        <div class="character-image">
-
-                            <img
-                                src="assets/images/characters/nobu.jpg"
-                                alt="Nobu Terashima">
-
-                        </div>
-
-                        <div class="character-info">
-
-                            <span>
-                                BLACK STONES
-                            </span>
-
-                            <h3>
-                                Nobu Terashima
-                            </h3>
-
+                        <div>
+                            <span>BLACK STONES</span>
+                            <h3>Yasu Takagi</h3>
                         </div>
 
                     </article>
 
 
-                    <!-- Character 4 -->
+                    <article class="character-preview reveal">
 
-                    <article class="character-card reveal">
+                        <img
+                            src="assets/images/characters/nobu.jpg"
+                            alt="Nobu">
 
-                        <div class="character-image">
-
-                            <img
-                                src="assets/images/characters/takumi.jpg"
-                                alt="Takumi Ichinose">
-
-                        </div>
-
-                        <div class="character-info">
-
-                            <span>
-                                TRAPNEST
-                            </span>
-
-                            <h3>
-                                Takumi Ichinose
-                            </h3>
-
+                        <div>
+                            <span>BLACK STONES</span>
+                            <h3>Nobu Terashima</h3>
                         </div>
 
                     </article>
+
+
+                    <article class="character-preview reveal">
+
+                        <img
+                            src="assets/images/characters/takumi.jpg"
+                            alt="Takumi">
+
+                        <div>
+                            <span>TRAPNEST</span>
+                            <h3>Takumi Ichinose</h3>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="center-button">
+
+                    <a
+                        href="pages/personajes.html"
+                        class="btn btn-outline"
+                        data-i18n="view_character">
+                        Ver personajes
+                    </a>
 
                 </div>
 
@@ -576,7 +441,7 @@
 
 
         <!-- =========================
-             MUSIC TEASER
+             MUSIC
         ========================== -->
 
         <section class="music-teaser">
@@ -585,31 +450,25 @@
 
             <div class="music-overlay"></div>
 
-            <div class="music-content reveal">
+            <div class="container music-content reveal">
 
                 <span class="section-number">
                     05
                 </span>
 
-                <p class="section-label">
-                    NANA MUSIC
-                </p>
-
-                <h2>
-                    THE SOUNDTRACK<br>
-                    <span>OF THEIR LIVES</span>
+                <h2 data-i18n="music_title">
+                    Música
                 </h2>
 
-                <p data-i18n="music.description">
-                    From BLACK STONES to TRAPNEST,
-                    music is more than a soundtrack.
-                    It's part of their story.
+                <p data-i18n="music_text">
+                    La música es una parte esencial de la historia de NANA.
                 </p>
 
-                <a href="pages/musica.html"
+                <a
+                    href="pages/musica.html"
                     class="btn btn-primary"
-                    data-i18n="music.button">
-                    LISTEN NOW
+                    data-i18n="music_button">
+                    Explorar música
                 </a>
 
             </div>
@@ -618,68 +477,97 @@
 
 
         <!-- =========================
-             STORY TEASER
+             HISTORIA
         ========================== -->
 
-        <section class="section story-preview">
+        <section class="section story-teaser">
 
-            <div class="section-container">
+            <div class="container">
 
-                <div class="story-layout">
+                <div class="section-heading reveal">
 
-                    <div class="story-text reveal">
+                    <span class="section-number">
+                        06
+                    </span>
 
-                        <span class="section-number">
-                            06
-                        </span>
+                    <h2 data-i18n="story_title">
+                        La historia
+                    </h2>
 
-                        <p class="section-label" data-i18n="story.label">
-                            THE JOURNEY
-                        </p>
+                </div>
 
-                        <h2 data-i18n="story.title">
-                            TOKYO.<br>
-                            707.<br>
-                            NANA.
-                        </h2>
 
-                        <p data-i18n="story.description">
-                            Follow the journey from the first train ride
-                            to the moments that changed everything.
-                        </p>
+                <div class="story-content reveal">
 
-                        <a href="pages/historia.html"
-                            class="text-link"
-                            data-i18n="story.button">
-                            EXPLORE THE TIMELINE →
-                        </a>
+                    <div class="story-line">
+
+                        <div class="story-point">
+                            01
+                        </div>
+
+                        <div>
+                            <h3>
+                                Tokyo
+                            </h3>
+
+                            <p data-i18n="story_text">
+                                Dos chicas llamadas Nana se encuentran en un tren rumbo a Tokio
+                                y sus vidas terminan cruzándose.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-line">
+
+                        <div class="story-point">
+                            02
+                        </div>
+
+                        <div>
+                            <h3>
+                                Apartment 707
+                            </h3>
+
+                            <p>
+                                Una convivencia inesperada comienza una historia que cambiará
+                                sus vidas.
+                            </p>
+                        </div>
 
                     </div>
 
 
-                    <div class="story-visual reveal">
-
-                        <div class="story-line"></div>
+                    <div class="story-line">
 
                         <div class="story-point">
-                            <span>
-                                707
-                            </span>
+                            03
                         </div>
 
-                        <div class="story-point">
-                            <span>
-                                TOKYO
-                            </span>
-                        </div>
+                        <div>
+                            <h3>
+                                Dreams
+                            </h3>
 
-                        <div class="story-point">
-                            <span>
-                                NANA
-                            </span>
+                            <p>
+                                Música, amor, amistad y decisiones que tendrán consecuencias.
+                            </p>
                         </div>
 
                     </div>
+
+                </div>
+
+
+                <div class="center-button">
+
+                    <a
+                        href="pages/historia.html"
+                        class="btn btn-outline"
+                        data-i18n="story_button">
+                        Descubrir la historia
+                    </a>
 
                 </div>
 
@@ -696,80 +584,65 @@
 
     <footer class="footer">
 
-        <div class="footer-container">
+        <div class="container footer-grid">
 
-            <div class="footer-brand">
+            <div>
 
-                <h2>
+                <div class="logo">
                     NANA
-                </h2>
+                </div>
 
-                <p data-i18n="footer.description">
-                    Two girls. One story.
+                <p data-i18n="footer_text">
+                    Fan website dedicado a NANA.
                 </p>
 
             </div>
 
 
-            <div class="footer-links">
+            <div>
 
-                <div>
+                <h4>
+                    NAVIGATION
+                </h4>
 
-                    <h3 data-i18n="footer.navigation">
-                        NAVIGATION
-                    </h3>
+                <a href="index.html">Home</a>
+                <a href="pages/personajes.html">Characters</a>
+                <a href="pages/historia.html">Story</a>
+                <a href="pages/musica.html">Music</a>
 
-                    <a href="index.html" data-i18n="nav.home">
-                        HOME
-                    </a>
-
-                    <a href="pages/personajes.html" data-i18n="nav.characters">
-                        CHARACTERS
-                    </a>
-
-                    <a href="pages/historia.html" data-i18n="nav.story">
-                        STORY
-                    </a>
-
-                    <a href="pages/musica.html" data-i18n="nav.music">
-                        MUSIC
-                    </a>
-
-                </div>
+            </div>
 
 
-                <div>
+            <div>
 
-                    <h3>
-                        BANDS
-                    </h3>
+                <h4>
+                    BANDS
+                </h4>
 
-                    <a href="pages/black-stones.html">
-                        BLACK STONES
-                    </a>
+                <a href="pages/black-stones.html">
+                    BLACK STONES
+                </a>
 
-                    <a href="pages/trapnest.html">
-                        TRAPNEST
-                    </a>
+                <a href="pages/trapnest.html">
+                    TRAPNEST
+                </a>
 
-                </div>
+            </div>
 
 
-                <div>
+            <div>
 
-                    <h3>
-                        PROJECT
-                    </h3>
+                <h4>
+                    PROJECT
+                </h4>
 
-                    <a href="#" target="_blank">
-                        GitHub
-                    </a>
+                <a href="#">
+                    GitHub
+                </a>
 
-                    <a href="#" target="_blank">
-                        Netlify
-                    </a>
-
-                </div>
+                <a href="#">
+                    Netlify
+                </a>
 
             </div>
 
@@ -779,12 +652,12 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 NANA Fan Project
+                © <span id="currentYear"></span> NANA Fan Website
             </p>
 
-            <p data-i18n="footer.disclaimer">
-                Fan project • Non-commercial • NANA and its characters
-                belong to their respective owners.
+            <p data-i18n="disclaimer">
+                Proyecto personal y no comercial.
+                NANA y sus personajes pertenecen a sus respectivos propietarios.
             </p>
 
         </div>
@@ -793,7 +666,7 @@
 
 
     <!-- =========================
-         JAVASCRIPT
+         SCRIPTS
     ========================== -->
 
     <script src="js/main.js"></script>
