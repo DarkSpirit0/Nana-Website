@@ -879,6 +879,8 @@ ul {
 
 .character-card {
     position: relative;
+    
+    width: 100%;
 
     min-height: 480px;
 
