@@ -565,7 +565,7 @@ ul {
 
     grid-template-columns: repeat(2, 1fr);
 
-    gap: 35px;
+    gap: 25px;
 }
 
 .nana-card {
@@ -589,7 +589,7 @@ ul {
 .card-image {
     position: relative;
 
-    height: 550px;
+    height: 380px;
 
     overflow: hidden;
 }
@@ -1988,4 +1988,25 @@ ul {
     font-family: var(--font-title);
     font-size: 1.25rem;
     color: var(--white);
+}
+
+/*movil*/
+@media (max-width: 767px) {
+
+    .nana-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-image {
+        height: 350px;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .card-content h3 {
+        font-size: 1.8rem;
+    }
 }
