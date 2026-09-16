@@ -7,19 +7,25 @@
 
     <title>NANA | Fan Website</title>
 
-    <meta name="description"
-        content="Fan website dedicado a NANA, sus personajes, historia, música y bandas.">
+    <meta
+        name="description"
+        content="Fan website dedicado a NANA, sus personajes, historia, música y bandas."
+    >
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 
 <body>
 
@@ -35,47 +41,90 @@
                 NANA
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+
+            <!-- MENU MOBILE -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                type="button"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
+
+            <!-- NAVIGATION -->
+
             <nav class="nav-menu" id="navMenu">
 
-                <a href="index.html" class="active" data-i18n="home">
+                <a
+                    href="index.html"
+                    class="active"
+                    data-i18n="home"
+                >
                     Inicio
                 </a>
 
-                <a href="pages/personajes.html" data-i18n="characters">
+                <a
+                    href="pages/personajes.html"
+                    data-i18n="characters"
+                >
                     Personajes
                 </a>
 
-                <a href="pages/historia.html" data-i18n="story">
+                <a
+                    href="pages/historia.html"
+                    data-i18n="story"
+                >
                     Historia
                 </a>
 
-                <a href="pages/musica.html" data-i18n="music">
+                <a
+                    href="pages/musica.html"
+                    data-i18n="music"
+                >
                     Música
                 </a>
 
-                <a href="pages/black-stones.html" data-i18n="black_stones">
+                <a
+                    href="pages/black-stones.html"
+                    data-i18n="black_stones"
+                >
                     BLACK STONES
                 </a>
 
-                <a href="pages/trapnest.html" data-i18n="trapnest">
+                <a
+                    href="pages/trapnest.html"
+                    data-i18n="trapnest"
+                >
                     TRAPNEST
                 </a>
 
+
+                <!-- LANGUAGE -->
+
                 <div class="language-selector">
 
-                    <button data-language="es" class="active">
+                    <button
+                        type="button"
+                        data-language="es"
+                        class="active"
+                        aria-label="Español"
+                    >
                         ES
                     </button>
 
                     <span>/</span>
 
-                    <button data-language="en">
+                    <button
+                        type="button"
+                        data-language="en"
+                        aria-label="English"
+                    >
                         EN
                     </button>
 
@@ -88,7 +137,12 @@
     </header>
 
 
+    <!-- =========================
+         MAIN
+    ========================== -->
+
     <main>
+
 
         <!-- =========================
              HERO
@@ -108,21 +162,34 @@
                     NANA
                 </h1>
 
-                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                <p
+                    class="hero-subtitle"
+                    data-i18n="hero_subtitle"
+                >
                     DOS CHICAS. UNA HISTORIA.
                 </p>
 
-                <a href="#intro" class="btn btn-primary" data-i18n="hero_button">
+                <a
+                    href="#intro"
+                    class="btn btn-primary"
+                    data-i18n="hero_button"
+                >
                     Explorar
                 </a>
 
             </div>
 
+
             <div class="hero-scroll">
+
                 <span data-i18n="scroll">
                     Desliza para descubrir
                 </span>
-                <span>↓</span>
+
+                <span aria-hidden="true">
+                    ↓
+                </span>
+
             </div>
 
         </section>
@@ -132,7 +199,10 @@
              INTRO
         ========================== -->
 
-        <section class="section intro-section" id="intro">
+        <section
+            class="section intro-section"
+            id="intro"
+        >
 
             <div class="container">
 
@@ -151,13 +221,21 @@
 
                 <div class="intro-grid">
 
+
+                    <!-- NANA OSAKI -->
+
                     <article class="intro-card reveal">
 
                         <div class="intro-image">
+
                             <img
                                 src="assets/images/characters/nana-osaki.jpg"
-                                alt="Nana Osaki">
+                                alt="Nana Osaki"
+                                loading="lazy"
+                            >
+
                         </div>
+
 
                         <div class="intro-content">
 
@@ -170,12 +248,15 @@
                             </h3>
 
                             <p data-i18n="nana_osaki_description">
-                                Una cantante punk decidida a triunfar en Tokio sin renunciar a sus sueños.
+                                Una cantante punk decidida a triunfar
+                                en Tokio sin renunciar a sus sueños.
                             </p>
 
                             <a
                                 href="pages/personajes.html"
-                                class="text-link">
+                                class="text-link"
+                                aria-label="Ver personajes"
+                            >
                                 →
                             </a>
 
@@ -184,13 +265,20 @@
                     </article>
 
 
+                    <!-- NANA KOMATSU -->
+
                     <article class="intro-card reveal">
 
                         <div class="intro-image">
+
                             <img
                                 src="assets/images/characters/nana-komatsu.jpg"
-                                alt="Nana Komatsu">
+                                alt="Nana Komatsu"
+                                loading="lazy"
+                            >
+
                         </div>
+
 
                         <div class="intro-content">
 
@@ -203,12 +291,15 @@
                             </h3>
 
                             <p data-i18n="nana_komatsu_description">
-                                Una joven romántica que busca comenzar una nueva vida junto a la persona que ama.
+                                Una joven romántica que busca comenzar
+                                una nueva vida junto a la persona que ama.
                             </p>
 
                             <a
                                 href="pages/personajes.html"
-                                class="text-link">
+                                class="text-link"
+                                aria-label="Ver personajes"
+                            >
                                 →
                             </a>
 
@@ -251,7 +342,8 @@
                 <a
                     href="pages/historia.html"
                     class="btn btn-outline"
-                    data-i18n="story_button">
+                    data-i18n="story_button"
+                >
                     Descubrir la historia
                 </a>
 
@@ -283,14 +375,18 @@
 
                 <div class="bands-grid">
 
+
+                    <!-- BLACK STONES -->
+
                     <a
                         href="pages/black-stones.html"
-                        class="band-card band-blast reveal">
+                        class="band-card band-blast reveal"
+                    >
 
                         <div class="band-content">
 
-                            <span>
-                                BAND
+                            <span data-i18n="band_label">
+                                BANDA
                             </span>
 
                             <h3>
@@ -298,10 +394,14 @@
                             </h3>
 
                             <p data-i18n="blast_text">
-                                Punk, rebeldía y una amistad marcada por los sueños.
+                                Punk, rebeldía y una amistad marcada
+                                por los sueños.
                             </p>
 
-                            <span class="band-arrow">
+                            <span
+                                class="band-arrow"
+                                aria-hidden="true"
+                            >
                                 →
                             </span>
 
@@ -310,14 +410,17 @@
                     </a>
 
 
+                    <!-- TRAPNEST -->
+
                     <a
                         href="pages/trapnest.html"
-                        class="band-card band-trapnest reveal">
+                        class="band-card band-trapnest reveal"
+                    >
 
                         <div class="band-content">
 
-                            <span>
-                                BAND
+                            <span data-i18n="band_label">
+                                BANDA
                             </span>
 
                             <h3>
@@ -325,10 +428,14 @@
                             </h3>
 
                             <p data-i18n="trapnest_text">
-                                Éxito, fama y una vida llena de contradicciones.
+                                Éxito, fama y una vida llena
+                                de contradicciones.
                             </p>
 
-                            <span class="band-arrow">
+                            <span
+                                class="band-arrow"
+                                aria-hidden="true"
+                            >
                                 →
                             </span>
 
@@ -344,7 +451,7 @@
 
 
         <!-- =========================
-             PERSONAJES DESTACADOS
+             PERSONAJES
         ========================== -->
 
         <section class="section characters-preview">
@@ -366,15 +473,25 @@
 
                 <div class="characters-preview-grid">
 
+
                     <article class="character-preview reveal">
 
                         <img
                             src="assets/images/characters/ren.jpg"
-                            alt="Ren Honjo">
+                            alt="Ren Honjo"
+                            loading="lazy"
+                        >
 
                         <div>
-                            <span>TRAPNEST</span>
-                            <h3>Ren Honjo</h3>
+
+                            <span>
+                                TRAPNEST
+                            </span>
+
+                            <h3>
+                                Ren Honjo
+                            </h3>
+
                         </div>
 
                     </article>
@@ -384,11 +501,20 @@
 
                         <img
                             src="assets/images/characters/yasu.jpg"
-                            alt="Yasu">
+                            alt="Yasu Takagi"
+                            loading="lazy"
+                        >
 
                         <div>
-                            <span>BLACK STONES</span>
-                            <h3>Yasu Takagi</h3>
+
+                            <span>
+                                BLACK STONES
+                            </span>
+
+                            <h3>
+                                Yasu Takagi
+                            </h3>
+
                         </div>
 
                     </article>
@@ -398,11 +524,20 @@
 
                         <img
                             src="assets/images/characters/nobu.jpg"
-                            alt="Nobu">
+                            alt="Nobu Terashima"
+                            loading="lazy"
+                        >
 
                         <div>
-                            <span>BLACK STONES</span>
-                            <h3>Nobu Terashima</h3>
+
+                            <span>
+                                BLACK STONES
+                            </span>
+
+                            <h3>
+                                Nobu Terashima
+                            </h3>
+
                         </div>
 
                     </article>
@@ -412,11 +547,20 @@
 
                         <img
                             src="assets/images/characters/takumi.jpg"
-                            alt="Takumi">
+                            alt="Takumi Ichinose"
+                            loading="lazy"
+                        >
 
                         <div>
-                            <span>TRAPNEST</span>
-                            <h3>Takumi Ichinose</h3>
+
+                            <span>
+                                TRAPNEST
+                            </span>
+
+                            <h3>
+                                Takumi Ichinose
+                            </h3>
+
                         </div>
 
                     </article>
@@ -429,7 +573,8 @@
                     <a
                         href="pages/personajes.html"
                         class="btn btn-outline"
-                        data-i18n="view_character">
+                        data-i18n="view_character"
+                    >
                         Ver personajes
                     </a>
 
@@ -467,7 +612,8 @@
                 <a
                     href="pages/musica.html"
                     class="btn btn-primary"
-                    data-i18n="music_button">
+                    data-i18n="music_button"
+                >
                     Explorar música
                 </a>
 
@@ -499,6 +645,9 @@
 
                 <div class="story-content reveal">
 
+
+                    <!-- 01 -->
+
                     <div class="story-line">
 
                         <div class="story-point">
@@ -506,18 +655,23 @@
                         </div>
 
                         <div>
-                            <h3>
-                                Tokyo
+
+                            <h3 data-i18n="story_tokyo_title">
+                                Tokio
                             </h3>
 
                             <p data-i18n="story_text">
-                                Dos chicas llamadas Nana se encuentran en un tren rumbo a Tokio
-                                y sus vidas terminan cruzándose.
+                                Dos chicas llamadas Nana se encuentran
+                                en un tren rumbo a Tokio y sus vidas
+                                terminan cruzándose.
                             </p>
+
                         </div>
 
                     </div>
 
+
+                    <!-- 02 -->
 
                     <div class="story-line">
 
@@ -526,18 +680,22 @@
                         </div>
 
                         <div>
-                            <h3>
-                                Apartment 707
+
+                            <h3 data-i18n="story_apartment_title">
+                                Apartamento 707
                             </h3>
 
-                            <p>
-                                Una convivencia inesperada comienza una historia que cambiará
-                                sus vidas.
+                            <p data-i18n="story_apartment_text">
+                                Una convivencia inesperada comienza
+                                una historia que cambiará sus vidas.
                             </p>
+
                         </div>
 
                     </div>
 
+
+                    <!-- 03 -->
 
                     <div class="story-line">
 
@@ -546,13 +704,16 @@
                         </div>
 
                         <div>
-                            <h3>
-                                Dreams
+
+                            <h3 data-i18n="story_dreams_title">
+                                Sueños
                             </h3>
 
-                            <p>
-                                Música, amor, amistad y decisiones que tendrán consecuencias.
+                            <p data-i18n="story_dreams_text">
+                                Música, amor, amistad y decisiones
+                                que tendrán consecuencias.
                             </p>
+
                         </div>
 
                     </div>
@@ -565,7 +726,8 @@
                     <a
                         href="pages/historia.html"
                         class="btn btn-outline"
-                        data-i18n="story_button">
+                        data-i18n="story_button"
+                    >
                         Descubrir la historia
                     </a>
 
@@ -586,6 +748,9 @@
 
         <div class="container footer-grid">
 
+
+            <!-- BRAND -->
+
             <div>
 
                 <div class="logo">
@@ -599,24 +764,51 @@
             </div>
 
 
+            <!-- NAVIGATION -->
+
             <div>
 
-                <h4>
-                    NAVIGATION
+                <h4 data-i18n="footer_navigation">
+                    NAVEGACIÓN
                 </h4>
 
-                <a href="index.html">Home</a>
-                <a href="pages/personajes.html">Characters</a>
-                <a href="pages/historia.html">Story</a>
-                <a href="pages/musica.html">Music</a>
+                <a
+                    href="index.html"
+                    data-i18n="home"
+                >
+                    Inicio
+                </a>
+
+                <a
+                    href="pages/personajes.html"
+                    data-i18n="characters"
+                >
+                    Personajes
+                </a>
+
+                <a
+                    href="pages/historia.html"
+                    data-i18n="story"
+                >
+                    Historia
+                </a>
+
+                <a
+                    href="pages/musica.html"
+                    data-i18n="music"
+                >
+                    Música
+                </a>
 
             </div>
 
 
+            <!-- BANDS -->
+
             <div>
 
-                <h4>
-                    BANDS
+                <h4 data-i18n="footer_bands">
+                    BANDAS
                 </h4>
 
                 <a href="pages/black-stones.html">
@@ -630,11 +822,15 @@
             </div>
 
 
+            <!-- PROJECT -->
+
             <div>
 
-                <h4>
-                    PROJECT
+                <h4 data-i18n="footer_project">
+                    PROYECTO
                 </h4>
+
+                <!-- Sustituir cuando tengas las URLs definitivas -->
 
                 <a href="#">
                     GitHub
@@ -652,7 +848,9 @@
         <div class="footer-bottom">
 
             <p>
-                © <span id="currentYear"></span> NANA Fan Website
+                ©
+                <span id="currentYear"></span>
+                NANA Fan Website
             </p>
 
             <p data-i18n="disclaimer">
@@ -666,7 +864,7 @@
 
 
     <!-- =========================
-         SCRIPTS
+         JAVASCRIPT
     ========================== -->
 
     <script src="js/main.js"></script>
