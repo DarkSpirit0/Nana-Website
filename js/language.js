@@ -60,14 +60,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // STORY
             story_title: "La historia",
+            story_subtitle: "Dos vidas que se encuentran por casualidad.",
             story_text:
                 "Dos chicas llamadas Nana se encuentran en un tren rumbo a Tokio y sus vidas terminan cruzándose.",
+
+            story_tokyo_label: "TOKYO",
+            story_tokyo_title: "Dos Nanas",
+            story_tokyo_text:
+                "Nana Osaki y Nana Komatsu son dos jóvenes completamente diferentes que coinciden durante un viaje en tren hacia Tokio.",
+
+            story_apartment_label: "APARTAMENTO 707",
+            story_apartment_title: "Dos compañeras",
+            story_apartment_text:
+                "Después de encontrarse nuevamente en Tokio, ambas terminan compartiendo el apartamento 707 y comienzan una amistad inesperada.",
+
+            story_blast_label: "MÚSICA",
+            story_blast_title: "BLACK STONES",
+            story_blast_text:
+                "Nana Osaki busca abrirse camino como cantante junto a BLACK STONES y convertir su música en una oportunidad para triunfar en Tokio.",
+
+            story_trapnest_label: "ÉXITO",
+            story_trapnest_title: "TRAPNEST",
+            story_trapnest_text:
+                "TRAPNEST alcanza un enorme éxito mientras las relaciones entre sus miembros y las personas de su entorno se complican.",
+
+            story_relationships_label: "RELACIONES",
+            story_relationships_title: "Amor y amistad",
+            story_relationships_text:
+                "La música, el amor, la amistad y las decisiones personales terminan entrelazando las vidas de todos los personajes.",
+
+            story_conflicts_label: "CONFLICTOS",
+            story_conflicts_title: "Decisiones difíciles",
+            story_conflicts_text:
+                "A medida que las relaciones evolucionan, los personajes deben enfrentarse a decisiones que cambian sus vidas.",
 
             story_button: "Descubrir la historia",
 
             // FOOTER
             footer_text:
                 "Fan website dedicado a NANA.",
+
+            footer_navigation: "NAVEGACIÓN",
+            footer_bands: "BANDAS",
+            footer_copyright: "NANA Fan Website",
 
             disclaimer:
                 "Proyecto personal y no comercial. NANA y sus personajes pertenecen a sus respectivos propietarios.",
@@ -83,6 +118,37 @@ document.addEventListener("DOMContentLoaded", () => {
             filter_trapnest: "TRAPNEST",
             filter_other: "Otros",
 
+            board_protagonists: "Protagonistas",
+            board_other: "Otros",
+
+            character_view: "Ver",
+            character_protagonist: "Protagonista",
+            character_dreamer: "La soñadora",
+            character_vocalist: "Vocalista",
+            character_guitarist: "Guitarrista",
+            character_bassist: "Bajista",
+            character_drummer: "Batería",
+            character_friend: "Amiga",
+            character_artist_student: "Estudiante de arte",
+
+            band_hero_title: "BLACK STONES",
+            band_hero_tagline: "Punk. Dreams. Friendship.",
+            band_intro_1: "BLACK STONES, también conocida como BLAST, es la banda formada alrededor de Nana Osaki y sus amigos.",
+            band_intro_2: "Su música representa la personalidad rebelde de Nana y su deseo de conseguir una vida independiente.",
+            band_member_vocal: "VOCAL",
+            band_member_guitar: "GUITAR",
+            band_member_drums: "DRUMS",
+            band_member_bass: "BASS",
+
+            trapnest_hero_title: "TRAPNEST",
+            trapnest_hero_tagline: "Fame. Success. Contradictions.",
+            trapnest_intro_1: "TRAPNEST es una de las bandas de rock más importantes de la historia y alcanza un enorme éxito dentro de la industria musical.",
+            trapnest_intro_2: "Su popularidad contrasta con las relaciones personales y conflictos que existen detrás del escenario.",
+            trapnest_member_guitar: "GUITAR",
+            trapnest_member_bass: "BASS",
+            trapnest_member_vocal: "VOCAL",
+            trapnest_member_drums: "DRUMS",
+
             // CHARACTER ROLES
             role_vocalist: "Vocalista",
             role_guitarist: "Guitarrista",
@@ -92,6 +158,29 @@ document.addEventListener("DOMContentLoaded", () => {
             role_vocalist_trapnest: "Vocalista",
             role_bassist_trapnest: "Bajista",
             role_drummer_trapnest: "Batería",
+
+            character_role_nana_osaki: "Vocalista de BLACK STONES",
+            character_description_nana_osaki: "Nana Osaki es la vocalista de BLACK STONES. Es una mujer fuerte, independiente y apasionada por la música. Su objetivo es triunfar con su banda en Tokio.",
+            character_role_nana_komatsu: "La soñadora",
+            character_description_nana_komatsu: "Nana Komatsu, conocida como Hachi, es una joven romántica que llega a Tokio buscando comenzar una nueva vida.",
+            character_role_ren: "Guitarrista de TRAPNEST",
+            character_description_ren: "Ren es el guitarrista de TRAPNEST y una de las personas más importantes en la vida de Nana Osaki.",
+            character_role_yasu: "Batería de BLACK STONES",
+            character_description_yasu: "Yasu es el batería de BLACK STONES. Es una persona tranquila y madura que suele actuar como apoyo para sus amigos.",
+            character_role_nobu: "Guitarrista de BLACK STONES",
+            character_description_nobu: "Nobu es guitarrista de BLACK STONES y uno de los amigos más cercanos de Nana Osaki.",
+            character_role_shin: "Bajista de BLACK STONES",
+            character_description_shin: "Shin es el joven bajista de BLACK STONES. A pesar de su edad, demuestra un gran talento musical.",
+            character_role_takumi: "Bajista de TRAPNEST",
+            character_description_takumi: "Takumi es el líder y bajista de TRAPNEST. Es una figura importante dentro de la industria musical.",
+            character_role_reira: "Vocalista de TRAPNEST",
+            character_description_reira: "Reira es la vocalista de TRAPNEST y posee una voz extraordinaria. Su vida personal está marcada por relaciones complejas.",
+            character_role_naoki: "Batería de TRAPNEST",
+            character_description_naoki: "Naoki es el batería de TRAPNEST y aporta una personalidad alegre al grupo.",
+            character_role_junko: "Amiga de Nana Komatsu",
+            character_description_junko: "Junko es una de las mejores amigas de Nana Komatsu y suele ofrecerle consejos cuando los necesita.",
+            character_role_shoji: "Estudiante de arte",
+            character_description_shoji: "Shoji es una persona importante durante una etapa de la vida de Nana Komatsu.",
 
             music_page_title: "MÚSICA",
             music_page_subtitle: "Dos bandas. Dos voces. Una historia.",
@@ -175,14 +264,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // STORY
             story_title: "The story",
+            story_subtitle: "Two lives that meet by chance.",
             story_text:
                 "Two girls named Nana meet on a train heading to Tokyo, and their lives become intertwined.",
+
+            story_tokyo_label: "TOKYO",
+            story_tokyo_title: "Two Nanas",
+            story_tokyo_text:
+                "Nana Osaki and Nana Komatsu are two completely different young women who meet during a train journey to Tokyo.",
+
+            story_apartment_label: "APARTMENT 707",
+            story_apartment_title: "Roommates",
+            story_apartment_text:
+                "After meeting again in Tokyo, they end up sharing apartment 707 and begin an unexpected friendship.",
+
+            story_blast_label: "MUSIC",
+            story_blast_title: "BLACK STONES",
+            story_blast_text:
+                "Nana Osaki tries to make her way as a singer with BLACK STONES and turn her music into an opportunity to succeed in Tokyo.",
+
+            story_trapnest_label: "SUCCESS",
+            story_trapnest_title: "TRAPNEST",
+            story_trapnest_text:
+                "TRAPNEST achieves enormous success while the relationships between its members and the people around them become complicated.",
+
+            story_relationships_label: "RELATIONSHIPS",
+            story_relationships_title: "Love and friendship",
+            story_relationships_text:
+                "Music, love, friendship and personal choices eventually intertwine the lives of all the characters.",
+
+            story_conflicts_label: "CONFLICTS",
+            story_conflicts_title: "Difficult decisions",
+            story_conflicts_text:
+                "As relationships evolve, the characters must face decisions that change their lives.",
 
             story_button: "Discover the story",
 
             // FOOTER
             footer_text:
                 "Fan website dedicated to NANA.",
+
+            footer_navigation: "NAVIGATION",
+            footer_bands: "BANDS",
+            footer_copyright: "NANA Fan Website",
 
             disclaimer:
                 "Personal non-commercial project. NANA and its characters belong to their respective owners.",
@@ -198,6 +322,37 @@ document.addEventListener("DOMContentLoaded", () => {
             filter_trapnest: "TRAPNEST",
             filter_other: "Other",
 
+            board_protagonists: "Protagonists",
+            board_other: "Other",
+
+            character_view: "View",
+            character_protagonist: "Protagonist",
+            character_dreamer: "The dreamer",
+            character_vocalist: "Vocalist",
+            character_guitarist: "Guitarist",
+            character_bassist: "Bassist",
+            character_drummer: "Drummer",
+            character_friend: "Friend",
+            character_artist_student: "Art student",
+
+            band_hero_title: "BLACK STONES",
+            band_hero_tagline: "Punk. Dreams. Friendship.",
+            band_intro_1: "BLACK STONES, also known as BLAST, is the band formed around Nana Osaki and her friends.",
+            band_intro_2: "Their music reflects Nana's rebellious personality and her desire to build an independent life.",
+            band_member_vocal: "VOCAL",
+            band_member_guitar: "GUITAR",
+            band_member_drums: "DRUMS",
+            band_member_bass: "BASS",
+
+            trapnest_hero_title: "TRAPNEST",
+            trapnest_hero_tagline: "Fame. Success. Contradictions.",
+            trapnest_intro_1: "TRAPNEST is one of the most important rock bands in history and achieves enormous success in the music industry.",
+            trapnest_intro_2: "Their popularity contrasts with the personal relationships and conflicts that exist behind the stage.",
+            trapnest_member_guitar: "GUITAR",
+            trapnest_member_bass: "BASS",
+            trapnest_member_vocal: "VOCAL",
+            trapnest_member_drums: "DRUMS",
+
             // CHARACTER ROLES
             role_vocalist: "Vocalist",
             role_guitarist: "Guitarist",
@@ -207,6 +362,29 @@ document.addEventListener("DOMContentLoaded", () => {
             role_vocalist_trapnest: "Vocalist",
             role_bassist_trapnest: "Bassist",
             role_drummer_trapnest: "Drummer",
+
+            character_role_nana_osaki: "BLACK STONES vocalist",
+            character_description_nana_osaki: "Nana Osaki is the vocalist of BLACK STONES. She is strong, independent and passionate about music. Her goal is to succeed with her band in Tokyo.",
+            character_role_nana_komatsu: "The dreamer",
+            character_description_nana_komatsu: "Nana Komatsu, known as Hachi, is a romantic young woman who arrives in Tokyo looking for a new life.",
+            character_role_ren: "TRAPNEST guitarist",
+            character_description_ren: "Ren is TRAPNEST's guitarist and one of the most important people in Nana Osaki's life.",
+            character_role_yasu: "BLACK STONES drummer",
+            character_description_yasu: "Yasu is BLACK STONES' drummer. He is calm and mature, and often supports his friends.",
+            character_role_nobu: "BLACK STONES guitarist",
+            character_description_nobu: "Nobu is BLACK STONES' guitarist and one of Nana Osaki's closest friends.",
+            character_role_shin: "BLACK STONES bassist",
+            character_description_shin: "Shin is BLACK STONES' young bassist. Despite his age, he shows great musical talent.",
+            character_role_takumi: "TRAPNEST bassist",
+            character_description_takumi: "Takumi is TRAPNEST's leader and bassist. He is an important figure in the music industry.",
+            character_role_reira: "TRAPNEST vocalist",
+            character_description_reira: "Reira is TRAPNEST's vocalist and has an extraordinary voice. Her personal life is marked by complicated relationships.",
+            character_role_naoki: "TRAPNEST drummer",
+            character_description_naoki: "Naoki is TRAPNEST's drummer and brings a cheerful personality to the group.",
+            character_role_junko: "Nana Komatsu's friend",
+            character_description_junko: "Junko is one of Nana Komatsu's best friends and often gives her advice when she needs it.",
+            character_role_shoji: "Art student",
+            character_description_shoji: "Shoji is an important person during a chapter of Nana Komatsu's life.",
 
             music_page_title: "MUSIC",
             music_page_subtitle: "Two bands. Two voices. One story.",
@@ -264,6 +442,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Actualizar idioma HTML
         document.documentElement.lang = language;
 
+        window.nanaCurrentLanguage = language;
+
 
         // Guardar idioma
         localStorage.setItem("nanaLanguage", language);
@@ -282,6 +462,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         });
+
+        window.dispatchEvent(new CustomEvent("nanaLanguageChanged", {
+            detail: { language }
+        }));
 
     }
 
@@ -312,6 +496,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const savedLanguage =
         localStorage.getItem("nanaLanguage") || "es";
+
+    window.nanaTranslations = translations;
+    window.nanaCurrentLanguage = savedLanguage;
 
     changeLanguage(savedLanguage);
 

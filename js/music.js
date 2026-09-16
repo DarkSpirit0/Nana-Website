@@ -72,34 +72,113 @@ document.addEventListener("DOMContentLoaded", () => {
     const playButtons =
         document.querySelectorAll(".music-play");
 
+    const fallbackVideoIds = [
+        "M7lc1UVf-VE",
+        "aqz-KE-bpKQ",
+        "ScMzIvxBSi4",
+        "ysz5S6PUM-U",
+        "dQw4w9WgXcQ",
+        "fJ9rUzIMcZQ",
+        "2Vv-BfVoR4g"
+    ];
 
-    playButtons.forEach(button => {
+    const allVideoIds =
+        [...playButtons].map(button =>
+            button.dataset.video
+        ).filter(Boolean);
+
+    const safeVideoIds =
+        allVideoIds.length ? allVideoIds : fallbackVideoIds;
+
+    let currentVideoIndex = -1;
+
+    function loadVideo(videoIndex) {
+
+        if (!safeVideoIds.length) {
+            return;
+        }
+
+        const videoId = safeVideoIds[videoIndex];
+
+        if (!videoId) {
+            return;
+        }
+
+        const player =
+            document.getElementById("musicPlayer");
+
+        if (!player) {
+            return;
+        }
+
+        player.src =
+            `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0&modestbranding=1`;
+
+        currentVideoIndex = videoIndex;
+
+        player.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+    playButtons.forEach((button, index) => {
 
         button.addEventListener("click", () => {
 
-            const videoId =
-                button.dataset.video;
+            loadVideo(index);
 
-            if (!videoId) {
+        });
+
+    });
+
+
+    // ==========================================
+    // CONTROLES DEL REPRODUCTOR
+    // ==========================================
+
+    const playerControls =
+        document.querySelectorAll("[data-player-action]");
+
+    playerControls.forEach(control => {
+
+        control.addEventListener("click", () => {
+
+            const action =
+                control.dataset.playerAction;
+
+            if (!safeVideoIds.length) {
                 return;
             }
 
+            if (action === "prev") {
+                const nextIndex =
+                    currentVideoIndex <= 0
+                        ? safeVideoIds.length - 1
+                        : currentVideoIndex - 1;
 
-            const player =
-                document.getElementById("musicPlayer");
-
-            if (!player) {
-                return;
+                loadVideo(nextIndex);
             }
 
+            if (action === "next") {
+                const nextIndex =
+                    currentVideoIndex >= safeVideoIds.length - 1
+                        ? 0
+                        : currentVideoIndex + 1;
 
-            player.src =
-                `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                loadVideo(nextIndex);
+            }
 
-            player.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
+            if (action === "pause") {
+                const player =
+                    document.getElementById("musicPlayer");
+
+                if (player) {
+                    player.src = "";
+                    currentVideoIndex = -1;
+                }
+            }
 
         });
 
@@ -122,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (player) {
                 player.src = "";
+                currentVideoIndex = -1;
             }
 
         });

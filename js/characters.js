@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterButtons =
         document.querySelectorAll(".filter-button");
 
+    const characterBoards =
+        document.querySelectorAll(".character-board");
+
     const characters =
         document.querySelectorAll(".character-profile");
 
@@ -46,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const filter =
                 button.dataset.filter;
 
-
             // Activar botón
             filterButtons.forEach(btn => {
                 btn.classList.remove("active");
@@ -54,27 +56,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
             button.classList.add("active");
 
+            characterBoards.forEach(board => {
+                const matches =
+                    filter === "all"
+                        ? board.dataset.board === "all"
+                        : board.dataset.board === filter;
 
-          // Filtrar personajes
-characters.forEach(character => {
+                board.classList.toggle("hidden", !matches);
+            });
 
-    const categories =
-        character.dataset.category.split(" ");
+            characters.forEach(character => {
+                const board = character.closest(".character-board");
+                const categories =
+                    character.dataset.category?.split(" ") || [];
+                const matches =
+                    filter === "all" ||
+                    categories.includes(filter);
 
-    if (
-        filter === "all" ||
-        categories.includes(filter)
-    ) {
-
-        character.classList.remove("hidden");
-
-    } else {
-
-        character.classList.add("hidden");
-
-    }
-
-});
+                character.classList.toggle("hidden", !matches);
+            });
 
         });
 
@@ -91,12 +91,11 @@ characters.forEach(character => {
 
             name: "Nana Osaki",
 
-            role: "Vocalista de BLACK STONES",
+            roleKey: "character_role_nana_osaki",
 
             image: "../assets/images/characters/nana-osaki.jpg",
 
-            description:
-                "Nana Osaki es la vocalista de BLACK STONES. Es una mujer fuerte, independiente y apasionada por la música. Su objetivo es triunfar con su banda en Tokio."
+            descriptionKey: "character_description_nana_osaki"
         },
 
 
@@ -104,12 +103,11 @@ characters.forEach(character => {
 
             name: "Nana Komatsu",
 
-            role: "La soñadora",
+            roleKey: "character_role_nana_komatsu",
 
             image: "../assets/images/characters/nana-komatsu.jpg",
 
-            description:
-                "Nana Komatsu, conocida como Hachi, es una joven romántica que llega a Tokio buscando comenzar una nueva vida."
+            descriptionKey: "character_description_nana_komatsu"
         },
 
 
@@ -117,12 +115,11 @@ characters.forEach(character => {
 
             name: "Ren Honjo",
 
-            role: "Guitarrista de TRAPNEST",
+            roleKey: "character_role_ren",
 
             image: "../assets/images/characters/ren.jpg",
 
-            description:
-                "Ren es el guitarrista de TRAPNEST y una de las personas más importantes en la vida de Nana Osaki."
+            descriptionKey: "character_description_ren"
         },
 
 
@@ -130,12 +127,11 @@ characters.forEach(character => {
 
             name: "Yasu Takagi",
 
-            role: "Batería de BLACK STONES",
+            roleKey: "character_role_yasu",
 
             image: "../assets/images/characters/yasu.jpg",
 
-            description:
-                "Yasu es el batería de BLACK STONES. Es una persona tranquila y madura que suele actuar como apoyo para sus amigos."
+            descriptionKey: "character_description_yasu"
         },
 
 
@@ -143,12 +139,11 @@ characters.forEach(character => {
 
             name: "Nobu Terashima",
 
-            role: "Guitarrista de BLACK STONES",
+            roleKey: "character_role_nobu",
 
             image: "../assets/images/characters/nobu.jpg",
 
-            description:
-                "Nobu es guitarrista de BLACK STONES y uno de los amigos más cercanos de Nana Osaki."
+            descriptionKey: "character_description_nobu"
         },
 
 
@@ -156,12 +151,11 @@ characters.forEach(character => {
 
             name: "Shinichi Okazaki",
 
-            role: "Bajista de BLACK STONES",
+            roleKey: "character_role_shin",
 
             image: "../assets/images/characters/shin.jpg",
 
-            description:
-                "Shin es el joven bajista de BLACK STONES. A pesar de su edad, demuestra un gran talento musical."
+            descriptionKey: "character_description_shin"
         },
 
 
@@ -169,12 +163,11 @@ characters.forEach(character => {
 
             name: "Takumi Ichinose",
 
-            role: "Bajista de TRAPNEST",
+            roleKey: "character_role_takumi",
 
             image: "../assets/images/characters/takumi.jpg",
 
-            description:
-                "Takumi es el líder y bajista de TRAPNEST. Es una figura importante dentro de la industria musical."
+            descriptionKey: "character_description_takumi"
         },
 
 
@@ -182,12 +175,11 @@ characters.forEach(character => {
 
             name: "Reira Serizawa",
 
-            role: "Vocalista de TRAPNEST",
+            roleKey: "character_role_reira",
 
             image: "../assets/images/characters/reira.jpg",
 
-            description:
-                "Reira es la vocalista de TRAPNEST y posee una voz extraordinaria. Su vida personal está marcada por relaciones complejas."
+            descriptionKey: "character_description_reira"
         },
 
 
@@ -195,12 +187,11 @@ characters.forEach(character => {
 
             name: "Naoki Fujieda",
 
-            role: "Batería de TRAPNEST",
+            roleKey: "character_role_naoki",
 
             image: "../assets/images/characters/naoki.jpg",
 
-            description:
-                "Naoki es el batería de TRAPNEST y aporta una personalidad alegre al grupo."
+            descriptionKey: "character_description_naoki"
         },
 
 
@@ -208,12 +199,11 @@ characters.forEach(character => {
 
             name: "Junko Saotome",
 
-            role: "Amiga de Nana Komatsu",
+            roleKey: "character_role_junko",
 
             image: "../assets/images/characters/junko.jpg",
 
-            description:
-                "Junko es una de las mejores amigas de Nana Komatsu y suele ofrecerle consejos cuando los necesita."
+            descriptionKey: "character_description_junko"
         },
 
 
@@ -221,15 +211,36 @@ characters.forEach(character => {
 
             name: "Shoji Endo",
 
-            role: "Estudiante de arte",
+            roleKey: "character_role_shoji",
 
             image: "../assets/images/characters/shoji.jpg",
 
-            description:
-                "Shoji es una persona importante durante una etapa de la vida de Nana Komatsu."
+            descriptionKey: "character_description_shoji"
         }
 
     };
+
+    let activeCharacter = null;
+
+    function updateModalLanguage() {
+
+        if (!activeCharacter) {
+            return;
+        }
+
+        const language = window.nanaCurrentLanguage || "es";
+        const translations = window.nanaTranslations || {};
+        const currentTranslations = translations[language] || translations.es || {};
+
+        modalRole.textContent =
+            currentTranslations[activeCharacter.roleKey] || "";
+
+        modalDescription.textContent =
+            currentTranslations[activeCharacter.descriptionKey] || "";
+
+    }
+
+    window.addEventListener("nanaLanguageChanged", updateModalLanguage);
 
 
     // ==========================================
@@ -257,14 +268,11 @@ characters.forEach(character => {
             modalImage.src = character.image;
             modalImage.alt = character.name;
 
+            activeCharacter = character;
+
             modalName.textContent =
                 character.name;
-
-            modalRole.textContent =
-                character.role;
-
-            modalDescription.textContent =
-                character.description;
+            updateModalLanguage();
 
 
             modal.classList.add("active");
