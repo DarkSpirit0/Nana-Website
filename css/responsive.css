@@ -1017,5 +1017,33 @@
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+    /* ==========================================
+   PERSONAJES - RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .characters-preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .character-preview {
+        height: 340px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .characters-preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .character-preview {
+        height: 360px;
+    }
+
+}
 
 }

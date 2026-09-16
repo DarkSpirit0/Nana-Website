@@ -55,26 +55,26 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add("active");
 
 
-            // Filtrar personajes
-            characters.forEach(character => {
+          // Filtrar personajes
+characters.forEach(character => {
 
-                const category =
-                    character.dataset.category;
+    const categories =
+        character.dataset.category.split(" ");
 
-                if (
-                    filter === "all" ||
-                    category === filter
-                ) {
+    if (
+        filter === "all" ||
+        categories.includes(filter)
+    ) {
 
-                    character.classList.remove("hidden");
+        character.classList.remove("hidden");
 
-                } else {
+    } else {
 
-                    character.classList.add("hidden");
+        character.classList.add("hidden");
 
-                }
+    }
 
-            });
+});
 
         });
 
