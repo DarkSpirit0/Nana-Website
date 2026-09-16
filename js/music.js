@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         player.src =
-            `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0&modestbranding=1`;
+            `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&playsinline=1&rel=0&modestbranding=1`;
 
         currentVideoIndex = videoIndex;
 
@@ -170,19 +170,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 loadVideo(nextIndex);
             }
 
-            if (action === "pause") {
-                const player =
-                    document.getElementById("musicPlayer");
-
-                if (player) {
-                    player.src = "";
-                    currentVideoIndex = -1;
-                }
-            }
-
         });
 
     });
+
+    if (safeVideoIds.length) {
+        loadVideo(0);
+    }
 
 
     // ==========================================

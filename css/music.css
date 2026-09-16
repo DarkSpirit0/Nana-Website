@@ -23,6 +23,31 @@
     align-items: center;
 }
 
+.music-page-hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(100% - 48px, 1200px);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.music-page-hero-content h1 {
+    margin: 0 0 20px;
+    max-width: 800px;
+    font-family: var(--font-title);
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.music-page-hero-content p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--gray-light);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 
 /* =========================================================
    MUSIC INTRO
@@ -672,6 +697,11 @@
 
     .music-page-hero {
         min-height: 50vh;
+    }
+
+    .music-page-hero-content {
+        width: min(100% - 32px, 1200px);
+        padding: 0 16px;
     }
 
     .music-filters {
