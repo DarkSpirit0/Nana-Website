@@ -6,15 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Historia y acontecimientos principales de NANA, el manga y anime de Ai Yazawa."
+    >
+
     <title>Historia | NANA</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
 
@@ -22,298 +30,440 @@
 
 <body>
 
-<header class="navbar">
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-    <div class="container nav-container">
+    <header class="navbar">
 
-        <a href="../index.html" class="logo">
-            NANA
-        </a>
+        <div class="container nav-container">
 
-        <button class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="nav-menu" id="navMenu">
-
-            <a href="../index.html" data-i18n="home">
-                Inicio
+            <a href="../index.html" class="logo" aria-label="NANA - Inicio">
+                NANA
             </a>
 
-            <a href="personajes.html" data-i18n="characters">
-                Personajes
-            </a>
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <a href="historia.html" class="active" data-i18n="story">
-                Historia
-            </a>
+            <nav
+                class="nav-menu"
+                id="navMenu"
+                aria-label="Navegación principal"
+            >
 
-            <a href="musica.html" data-i18n="music">
-                Música
-            </a>
+                <a
+                    href="../index.html"
+                    data-i18n="home"
+                >
+                    Inicio
+                </a>
 
-            <a href="black-stones.html" data-i18n="black_stones">
-                BLACK STONES
-            </a>
+                <a
+                    href="personajes.html"
+                    data-i18n="characters"
+                >
+                    Personajes
+                </a>
 
-            <a href="trapnest.html" data-i18n="trapnest">
-                TRAPNEST
-            </a>
+                <a
+                    href="historia.html"
+                    class="active"
+                    data-i18n="story"
+                    aria-current="page"
+                >
+                    Historia
+                </a>
 
-            <div class="language-selector">
+                <a
+                    href="musica.html"
+                    data-i18n="music"
+                >
+                    Música
+                </a>
 
-                <button data-language="es" class="active">
-                    ES
-                </button>
+                <a
+                    href="black-stones.html"
+                    data-i18n="black_stones"
+                >
+                    BLACK STONES
+                </a>
 
-                <span>/</span>
+                <a
+                    href="trapnest.html"
+                    data-i18n="trapnest"
+                >
+                    TRAPNEST
+                </a>
 
-                <button data-language="en">
-                    EN
-                </button>
+                <!-- Selector de idioma -->
+                <div class="language-selector">
+
+                    <button
+                        type="button"
+                        data-language="es"
+                        class="active"
+                        aria-label="Cambiar idioma a español"
+                    >
+                        ES
+                    </button>
+
+                    <span aria-hidden="true">/</span>
+
+                    <button
+                        type="button"
+                        data-language="en"
+                        aria-label="Change language to English"
+                    >
+                        EN
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+        <!-- =========================
+             PAGE HERO
+        ========================== -->
+
+        <section class="page-hero">
+
+            <div class="container reveal">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <h1 data-i18n="story_title">
+                    LA HISTORIA
+                </h1>
+
+                <p data-i18n="story_subtitle">
+                    Dos vidas que se encuentran por casualidad.
+                </p>
 
             </div>
 
-        </nav>
-
-    </div>
-
-</header>
+        </section>
 
 
-<main>
+        <!-- =========================
+             STORY TIMELINE
+        ========================== -->
 
-    <section class="page-hero">
+        <section class="section">
 
-        <div class="container reveal">
+            <div class="container">
 
-            <span class="section-number">
-                02
-            </span>
+                <div class="story-content">
 
-            <h1 data-i18n="story_title">
-                LA HISTORIA
-            </h1>
+                    <!-- 01 -->
+
+                    <article class="story-line reveal">
+
+                        <div class="story-point" aria-hidden="true">
+                            01
+                        </div>
+
+                        <div class="story-info">
+
+                            <span data-i18n="story_tokyo_label">
+                                TOKYO
+                            </span>
+
+                            <h2 data-i18n="story_tokyo_title">
+                                Dos Nanas
+                            </h2>
+
+                            <p data-i18n="story_tokyo_text">
+                                Nana Osaki y Nana Komatsu son dos jóvenes completamente
+                                diferentes que coinciden durante un viaje en tren hacia Tokio.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="story-line reveal">
+
+                        <div class="story-point" aria-hidden="true">
+                            02
+                        </div>
+
+                        <div class="story-info">
+
+                            <span data-i18n="story_apartment_label">
+                                APARTAMENTO 707
+                            </span>
+
+                            <h2 data-i18n="story_apartment_title">
+                                Dos compañeras
+                            </h2>
+
+                            <p data-i18n="story_apartment_text">
+                                Después de encontrarse nuevamente en Tokio, ambas terminan
+                                compartiendo el apartamento 707 y comienzan una amistad inesperada.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="story-line reveal">
+
+                        <div class="story-point" aria-hidden="true">
+                            03
+                        </div>
+
+                        <div class="story-info">
+
+                            <span data-i18n="story_blast_label">
+                                MÚSICA
+                            </span>
+
+                            <h2 data-i18n="story_blast_title">
+                                BLACK STONES
+                            </h2>
+
+                            <p data-i18n="story_blast_text">
+                                Nana Osaki busca abrirse camino como cantante junto a
+                                BLACK STONES y convertir su música en una oportunidad para triunfar en Tokio.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="story-line reveal">
+
+                        <div class="story-point" aria-hidden="true">
+                            04
+                        </div>
+
+                        <div class="story-info">
+
+                            <span data-i18n="story_trapnest_label">
+                                ÉXITO
+                            </span>
+
+                            <h2 data-i18n="story_trapnest_title">
+                                TRAPNEST
+                            </h2>
+
+                            <p data-i18n="story_trapnest_text">
+                                TRAPNEST alcanza un enorme éxito mientras las relaciones
+                                entre sus miembros y las personas de su entorno se complican.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 05 -->
+
+                    <article class="story-line reveal">
+
+                        <div class="story-point" aria-hidden="true">
+                            05
+                        </div>
+
+                        <div class="story-info">
+
+                            <span data-i18n="story_relationships_label">
+                                RELACIONES
+                            </span>
+
+                            <h2 data-i18n="story_relationships_title">
+                                Amor y amistad
+                            </h2>
+
+                            <p data-i18n="story_relationships_text">
+                                La música, el amor, la amistad y las decisiones personales
+                                terminan entrelazando las vidas de todos los personajes.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 06 -->
+
+                    <article class="story-line reveal">
+
+                        <div class="story-point" aria-hidden="true">
+                            06
+                        </div>
+
+                        <div class="story-info">
+
+                            <span data-i18n="story_conflicts_label">
+                                CONFLICTOS
+                            </span>
+
+                            <h2 data-i18n="story_conflicts_title">
+                                Decisiones difíciles
+                            </h2>
+
+                            <p data-i18n="story_conflicts_text">
+                                A medida que las relaciones evolucionan, los personajes
+                                deben enfrentarse a decisiones que cambian sus vidas.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- Información -->
+
+            <div>
+
+                <div class="logo">
+                    NANA
+                </div>
+
+                <p data-i18n="footer_text">
+                    Fan website dedicado a NANA.
+                </p>
+
+            </div>
+
+
+            <!-- Navegación -->
+
+            <div>
+
+                <h4 data-i18n="footer_navigation">
+                    NAVEGACIÓN
+                </h4>
+
+                <a
+                    href="../index.html"
+                    data-i18n="home"
+                >
+                    Inicio
+                </a>
+
+                <a
+                    href="personajes.html"
+                    data-i18n="characters"
+                >
+                    Personajes
+                </a>
+
+                <a
+                    href="historia.html"
+                    data-i18n="story"
+                >
+                    Historia
+                </a>
+
+                <a
+                    href="musica.html"
+                    data-i18n="music"
+                >
+                    Música
+                </a>
+
+            </div>
+
+
+            <!-- Bandas -->
+
+            <div>
+
+                <h4 data-i18n="footer_bands">
+                    BANDAS
+                </h4>
+
+                <a href="black-stones.html">
+                    BLACK STONES
+                </a>
+
+                <a href="trapnest.html">
+                    TRAPNEST
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer bottom -->
+
+        <div class="footer-bottom">
 
             <p>
-                Dos vidas que se encuentran por casualidad.
+                © <span id="currentYear"></span>
+                <span data-i18n="footer_copyright">
+                    NANA Fan Website
+                </span>
+            </p>
+
+            <p data-i18n="disclaimer">
+                Proyecto personal y no comercial.
             </p>
 
         </div>
 
-    </section>
+    </footer>
 
 
-    <section class="section">
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-        <div class="container">
-
-            <div class="story-content">
-
-
-                <article class="story-line reveal">
-
-                    <div class="story-point">
-                        01
-                    </div>
-
-                    <div>
-
-                        <span>
-                            TOKYO
-                        </span>
-
-                        <h2>
-                            Dos Nanas
-                        </h2>
-
-                        <p>
-                            Nana Osaki y Nana Komatsu son dos jóvenes completamente
-                            diferentes que coinciden durante un viaje en tren hacia Tokio.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="story-line reveal">
-
-                    <div class="story-point">
-                        02
-                    </div>
-
-                    <div>
-
-                        <span>
-                            APARTMENT 707
-                        </span>
-
-                        <h2>
-                            Dos compañeras
-                        </h2>
-
-                        <p>
-                            Después de encontrarse nuevamente en Tokio, ambas terminan
-                            compartiendo el apartamento 707.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="story-line reveal">
-
-                    <div class="story-point">
-                        03
-                    </div>
-
-                    <div>
-
-                        <span>
-                            MUSIC
-                        </span>
-
-                        <h2>
-                            BLACK STONES
-                        </h2>
-
-                        <p>
-                            Nana Osaki busca abrirse camino como cantante junto a
-                            BLACK STONES.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="story-line reveal">
-
-                    <div class="story-point">
-                        04
-                    </div>
-
-                    <div>
-
-                        <span>
-                            SUCCESS
-                        </span>
-
-                        <h2>
-                            TRAPNEST
-                        </h2>
-
-                        <p>
-                            TRAPNEST alcanza un enorme éxito mientras las relaciones
-                            entre sus miembros y las personas de su entorno se complican.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="story-line reveal">
-
-                    <div class="story-point">
-                        05
-                    </div>
-
-                    <div>
-
-                        <span>
-                            RELATIONSHIPS
-                        </span>
-
-                        <h2>
-                            Amor y amistad
-                        </h2>
-
-                        <p>
-                            La música, el amor, la amistad y las decisiones personales
-                            terminan entrelazando las vidas de todos los personajes.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-<footer class="footer">
-
-    <div class="container footer-grid">
-
-        <div>
-
-            <div class="logo">
-                NANA
-            </div>
-
-            <p data-i18n="footer_text">
-                Fan website dedicado a NANA.
-            </p>
-
-        </div>
-
-        <div>
-
-            <h4>NAVIGATION</h4>
-
-            <a href="../index.html">Home</a>
-            <a href="personajes.html">Characters</a>
-            <a href="historia.html">Story</a>
-            <a href="musica.html">Music</a>
-
-        </div>
-
-        <div>
-
-            <h4>BANDS</h4>
-
-            <a href="black-stones.html">
-                BLACK STONES
-            </a>
-
-            <a href="trapnest.html">
-                TRAPNEST
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-        <p>
-            © <span id="currentYear"></span> NANA Fan Website
-        </p>
-
-        <p data-i18n="disclaimer">
-            Proyecto personal y no comercial.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="../js/main.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/language.js"></script>
-<script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/language.js"></script>
+    <script src="../js/animations.js"></script>
 
 </body>
 
