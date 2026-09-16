@@ -2,533 +2,857 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Música | NANA</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="La música de NANA, BLACK STONES y TRAPNEST.">
+        content="Descubre la música de NANA, BLACK STONES y TRAPNEST."
+    >
 
+    <title>NANA | Música</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/music.css">
     <link rel="stylesheet" href="../css/responsive.css">
-
 </head>
 
 <body>
 
-<header class="navbar">
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-    <div class="container nav-container">
+    <header class="navbar">
 
-        <a href="../index.html" class="logo">
-            NANA
-        </a>
+        <div class="nav-container">
 
-        <button class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="nav-menu" id="navMenu">
-
-            <a href="../index.html" data-i18n="home">
-                Inicio
+            <a href="../index.html" class="nav-logo">
+                NANA
             </a>
 
-            <a href="personajes.html" data-i18n="characters">
-                Personajes
-            </a>
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <a href="historia.html" data-i18n="story">
-                Historia
-            </a>
+            <nav class="nav-menu" id="navMenu">
 
-            <a href="musica.html" class="active" data-i18n="music">
-                Música
-            </a>
+                <a href="../index.html">
+                    <span data-i18n="home">Inicio</span>
+                </a>
 
-            <a href="black-stones.html" data-i18n="black_stones">
-                BLACK STONES
-            </a>
+                <a href="personajes.html">
+                    <span data-i18n="characters">Personajes</span>
+                </a>
 
-            <a href="trapnest.html" data-i18n="trapnest">
-                TRAPNEST
-            </a>
+                <a href="historia.html">
+                    <span data-i18n="story">Historia</span>
+                </a>
 
-            <div class="language-selector">
+                <a href="musica.html" class="active">
+                    <span data-i18n="music">Música</span>
+                </a>
 
-                <button data-language="es" class="active">
-                    ES
-                </button>
+                <a href="black-stones.html">
+                    <span data-i18n="black_stones">BLACK STONES</span>
+                </a>
 
-                <span>/</span>
+                <a href="trapnest.html">
+                    <span data-i18n="trapnest">TRAPNEST</span>
+                </a>
 
-                <button data-language="en">
-                    EN
-                </button>
+                <!-- Idiomas -->
 
-            </div>
+                <div class="language-selector">
 
-        </nav>
+                    <button
+                        class="language-button active"
+                        data-language="es"
+                        type="button"
+                    >
+                        ES
+                    </button>
 
-    </div>
+                    <span>|</span>
 
-</header>
+                    <button
+                        class="language-button"
+                        data-language="en"
+                        type="button"
+                    >
+                        EN
+                    </button>
 
+                </div>
 
-<main class="music-page">
-
-    <!-- HERO -->
-
-    <section class="page-hero music-page-hero">
-
-        <div class="container reveal">
-
-            <span class="section-number">
-                05
-            </span>
-
-            <h1 data-i18n="music_title">
-                MÚSICA
-            </h1>
-
-            <p>
-                The soundtrack of NANA
-            </p>
+            </nav>
 
         </div>
 
-    </section>
+    </header>
 
 
-    <!-- INTRO -->
+    <!-- =========================
+         MAIN
+    ========================== -->
 
-    <section class="section">
+    <main class="music-page">
 
-        <div class="container">
 
-            <div class="section-heading reveal">
+        <!-- =========================
+             HERO
+        ========================== -->
 
-                <span class="section-number">
-                    01
+        <section class="music-page-hero">
+
+            <div class="music-page-hero-overlay"></div>
+
+            <div class="music-page-hero-content reveal">
+
+                <span class="section-label">
+                    NANA
                 </span>
 
-                <h2>
-                    Music of NANA
-                </h2>
+                <h1 data-i18n="music_page_title">
+                    MÚSICA
+                </h1>
+
+                <p data-i18n="music_page_subtitle">
+                    Dos bandas. Dos voces. Una historia.
+                </p>
 
             </div>
 
-            <div class="intro-text reveal">
+        </section>
 
-                <p>
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="music-intro section">
+
+            <div class="container reveal">
+
+                <span
+                    class="section-label"
+                    data-i18n="music_label"
+                >
+                    THE SOUND OF NANA
+                </span>
+
+                <h2 data-i18n="music_intro_title">
+                    La música de NANA
+                </h2>
+
+                <p data-i18n="music_intro_text">
                     La música es una parte fundamental de NANA.
-                    Las canciones de BLACK STONES y TRAPNEST acompañan
-                    algunos de los momentos más importantes de la historia.
+                    BLACK STONES y TRAPNEST representan dos estilos,
+                    dos mundos y dos formas diferentes de entender
+                    la vida.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FILTERS
+        ========================== -->
+
+        <section class="music-library section">
+
+            <div class="container">
+
+                <div class="music-filters reveal">
+
+                    <button
+                        class="music-filter active"
+                        data-filter="all"
+                        type="button"
+                    >
+                        <span data-i18n="music_filter_all">
+                            TODAS
+                        </span>
+                    </button>
+
+                    <button
+                        class="music-filter"
+                        data-filter="blast"
+                        type="button"
+                    >
+                        <span data-i18n="music_filter_blast">
+                            BLACK STONES
+                        </span>
+                    </button>
+
+                    <button
+                        class="music-filter"
+                        data-filter="trapnest"
+                        type="button"
+                    >
+                        <span data-i18n="music_filter_trapnest">
+                            TRAPNEST
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     PLAYER
+                ========================== -->
+
+                <div class="music-player-container reveal">
+
+                    <div class="player-header">
+
+                        <div>
+
+                            <span
+                                class="section-label"
+                                data-i18n="player_label"
+                            >
+                                NANA PLAYER
+                            </span>
+
+                            <h3 data-i18n="player_title">
+                                Reproductor
+                            </h3>
+
+                        </div>
+
+                        <button
+                            id="stopMusic"
+                            class="music-stop"
+                            type="button"
+                            data-i18n="player_stop"
+                        >
+                            Detener
+                        </button>
+
+                    </div>
+
+
+                    <div class="youtube-player">
+
+                        <iframe
+                            id="musicPlayer"
+                            src=""
+                            title="NANA Music Player"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+
+                        <div
+                            class="player-placeholder"
+                            id="playerPlaceholder"
+                        >
+                            <span>♪</span>
+
+                            <p data-i18n="player_placeholder">
+                                Selecciona una canción para comenzar.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     SONG GRID
+                ========================== -->
+
+                <div class="music-grid">
+
+
+                    <!-- ROSE -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="blast"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/rose.jpg"
+                                alt="Rose - ANNA TSUCHIYA inspi' NANA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                01
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                BLACK STONES
+                            </span>
+
+                            <h3>
+                                Rose
+                            </h3>
+
+                            <p>
+                                ANNA TSUCHIYA inspi' NANA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="opening_1"
+                            >
+                                OPENING 01
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="1-3efFGEnr8&list=RD1-3efFGEnr8&start_radio=1"
+                            aria-label="Reproducir Rose"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+
+                    <!-- LUCY -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="blast"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/lucy.jpg"
+                                alt="Lucy - ANNA TSUCHIYA inspi' NANA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                02
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                BLACK STONES
+                            </span>
+
+                            <h3>
+                                Lucy
+                            </h3>
+
+                            <p>
+                                ANNA TSUCHIYA inspi' NANA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="opening_3"
+                            >
+                                OPENING 03
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="w6Iku_XYEMo&list=RDw6Iku_XYEMo&start_radio=1"
+                            aria-label="Reproducir Lucy"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+
+                    <!-- KUROI NAMIDA -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="blast"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/kuroi-namida.jpg"
+                                alt="Kuroi Namida - ANNA TSUCHIYA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                03
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                BLACK STONES
+                            </span>
+
+                            <h3>
+                                Kuroi Namida
+                            </h3>
+
+                            <p>
+                                ANNA TSUCHIYA inspi' NANA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="ending_3"
+                            >
+                                ENDING 03
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="_gZFTyPzeO4&list=RD_gZFTyPzeO4&start_radio=1"
+                            aria-label="Reproducir Kuroi Namida"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+
+                    <!-- A LITTLE PAIN -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="trapnest"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/a-little-pain.jpg"
+                                alt="A Little Pain - OLIVIA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                04
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                TRAPNEST
+                            </span>
+
+                            <h3>
+                                A Little Pain
+                            </h3>
+
+                            <p>
+                                OLIVIA inspi' REIRA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="ending_1"
+                            >
+                                ENDING 01
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="6yee-r9EIqg&list=RD6yee-r9EIqg&start_radio=1"
+                            aria-label="Reproducir A Little Pain"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+
+                    <!-- WISH -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="trapnest"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/wish.jpg"
+                                alt="Wish - OLIVIA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                05
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                TRAPNEST
+                            </span>
+
+                            <h3>
+                                Wish
+                            </h3>
+
+                            <p>
+                                OLIVIA inspi' REIRA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="opening_2"
+                            >
+                                OPENING 02
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="6JwvH44ZLx0&list=RD6JwvH44ZLx0&start_radio=1"
+                            aria-label="Reproducir Wish"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+
+                    <!-- STARLESS NIGHT -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="trapnest"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/starless-night.jpg"
+                                alt="Starless Night - OLIVIA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                06
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                TRAPNEST
+                            </span>
+
+                            <h3>
+                                Starless Night
+                            </h3>
+
+                            <p>
+                                OLIVIA inspi' REIRA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="ending_2"
+                            >
+                                ENDING 02
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="qi--n3eMUuE&list=RDqi--n3eMUuE&start_radio=1"
+                            aria-label="Reproducir Starless Night"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+
+                    <!-- WINTER SLEEP -->
+
+                    <article
+                        class="song-card reveal"
+                        data-group="trapnest"
+                    >
+
+                        <div class="song-image">
+
+                            <img
+                                src="../assets/images/music/winter-sleep.jpg"
+                                alt="Winter Sleep - OLIVIA"
+                                loading="lazy"
+                            >
+
+                            <span class="song-number">
+                                07
+                            </span>
+
+                        </div>
+
+
+                        <div class="song-info">
+
+                            <span class="song-band">
+                                TRAPNEST
+                            </span>
+
+                            <h3>
+                                Winter Sleep
+                            </h3>
+
+                            <p>
+                                OLIVIA inspi' REIRA
+                            </p>
+
+                            <span
+                                class="song-type"
+                                data-i18n="ending_4"
+                            >
+                                ENDING 04
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="music-play"
+                            type="button"
+                            data-video="GgOrbSh0W20&list=RDGgOrbSh0W20&start_radio=1"
+                            aria-label="Reproducir Winter Sleep"
+                        >
+                            <img
+                                src="../assets/icons/play.svg"
+                                alt=""
+                            >
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MUSIC QUOTE
+        ========================== -->
+
+        <section class="music-quote section">
+
+            <div class="container reveal">
+
+                <span class="music-note">
+                    ♪
+                </span>
+
+                <blockquote data-i18n="music_quote">
+                    La música conecta a las personas incluso cuando
+                    sus vidas parecen estar completamente separadas.
+                </blockquote>
+
+                <span class="quote-line"></span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <h3>NANA</h3>
+
+                <p data-i18n="footer_text">
+                    Fan website dedicado a NANA.
                 </p>
 
             </div>
 
 
-            <!-- FILTERS -->
+            <div class="footer-links">
 
-            <div class="music-filters reveal">
+                <h4 data-i18n="footer_navigation">
+                    Navegación
+                </h4>
 
-                <button
-                    class="music-filter active"
-                    data-filter="all">
-                    ALL
-                </button>
+                <a href="../index.html" data-i18n="home">
+                    Inicio
+                </a>
 
-                <button
-                    class="music-filter"
-                    data-filter="blast">
+                <a href="personajes.html" data-i18n="characters">
+                    Personajes
+                </a>
+
+                <a href="historia.html" data-i18n="story">
+                    Historia
+                </a>
+
+                <a href="musica.html" data-i18n="music">
+                    Música
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    NANA
+                </h4>
+
+                <a href="black-stones.html">
                     BLACK STONES
-                </button>
+                </a>
 
-                <button
-                    class="music-filter"
-                    data-filter="trapnest">
+                <a href="trapnest.html">
                     TRAPNEST
-                </button>
-
-            </div>
-
-
-            <!-- PLAYER -->
-
-            <div class="music-player-container reveal">
-
-                <div class="player-header">
-
-                    <div>
-
-                        <span>
-                            NOW PLAYING
-                        </span>
-
-                        <h3>
-                            NANA
-                        </h3>
-
-                    </div>
-
-                    <button
-                        id="stopMusic"
-                        class="btn btn-outline">
-                        STOP
-                    </button>
-
-                </div>
-
-                <div class="youtube-player">
-
-                    <iframe
-                        id="musicPlayer"
-                        src=""
-                        title="NANA Music Player"
-                        allow="autoplay; encrypted-media; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-
-                </div>
-
-            </div>
-
-
-            <!-- SONGS -->
-
-            <div class="music-grid">
-
-
-                <!-- ROSE -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="blast">
-
-                    <div class="song-number">
-                        01
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            BLACK STONES
-                        </span>
-
-                        <h3>
-                            Rose
-                        </h3>
-
-                        <p>
-                            Anna Tsuchiya
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
-
-
-                <!-- LUCY -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="blast">
-
-                    <div class="song-number">
-                        02
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            BLACK STONES
-                        </span>
-
-                        <h3>
-                            Lucy
-                        </h3>
-
-                        <p>
-                            Anna Tsuchiya
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
-
-
-                <!-- KUROI NAMIDA -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="blast">
-
-                    <div class="song-number">
-                        03
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            BLACK STONES
-                        </span>
-
-                        <h3>
-                            Kuroi Namida
-                        </h3>
-
-                        <p>
-                            Anna Tsuchiya
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
-
-
-                <!-- A LITTLE PAIN -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="trapnest">
-
-                    <div class="song-number">
-                        04
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            TRAPNEST
-                        </span>
-
-                        <h3>
-                            A Little Pain
-                        </h3>
-
-                        <p>
-                            OLIVIA
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
-
-
-                <!-- WISH -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="trapnest">
-
-                    <div class="song-number">
-                        05
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            TRAPNEST
-                        </span>
-
-                        <h3>
-                            Wish
-                        </h3>
-
-                        <p>
-                            OLIVIA
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
-
-
-                <!-- STARLESS NIGHT -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="trapnest">
-
-                    <div class="song-number">
-                        06
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            TRAPNEST
-                        </span>
-
-                        <h3>
-                            Starless Night
-                        </h3>
-
-                        <p>
-                            OLIVIA
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
-
-
-                <!-- WINTER SLEEP -->
-
-                <article
-                    class="song-card reveal"
-                    data-group="trapnest">
-
-                    <div class="song-number">
-                        07
-                    </div>
-
-                    <div class="song-info">
-
-                        <span>
-                            TRAPNEST
-                        </span>
-
-                        <h3>
-                            Winter Sleep
-                        </h3>
-
-                        <p>
-                            OLIVIA
-                        </p>
-
-                    </div>
-
-                    <button
-                        class="music-play"
-                        data-video="">
-                        ▶
-                    </button>
-
-                </article>
+                </a>
 
             </div>
 
         </div>
 
-    </section>
 
-</main>
+        <div class="footer-bottom">
 
+            <p>
+                ©
+                <span id="currentYear"></span>
+                NANA Fan Website
+            </p>
 
-<footer class="footer">
-
-    <div class="container footer-grid">
-
-        <div>
-
-            <div class="logo">
-                NANA
-            </div>
-
-            <p data-i18n="footer_text">
-                Fan website dedicado a NANA.
+            <p data-i18n="disclaimer">
+                Proyecto personal y no comercial.
+                NANA y sus personajes pertenecen a sus respectivos propietarios.
             </p>
 
         </div>
 
-        <div>
-
-            <h4>NAVIGATION</h4>
-
-            <a href="../index.html">Home</a>
-            <a href="personajes.html">Characters</a>
-            <a href="historia.html">Story</a>
-            <a href="musica.html">Music</a>
-
-        </div>
-
-        <div>
-
-            <h4>BANDS</h4>
-
-            <a href="black-stones.html">
-                BLACK STONES
-            </a>
-
-            <a href="trapnest.html">
-                TRAPNEST
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-        <p>
-            © <span id="currentYear"></span> NANA Fan Website
-        </p>
-
-        <p data-i18n="disclaimer">
-            Proyecto personal y no comercial.
-        </p>
-
-    </div>
-
-</footer>
+    </footer>
 
 
-<script src="../js/main.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/language.js"></script>
-<script src="../js/music.js"></script>
-<script src="../js/animations.js"></script>
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Volver arriba"
+    >
+        ↑
+    </button>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/main.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/language.js"></script>
+    <script src="../js/music.js"></script>
+    <script src="../js/animations.js"></script>
 
 </body>
 
